@@ -1,0 +1,20 @@
+{
+  "name": "eleventy-tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx @11ty/eleventy",
+    "dev": "npx tailwindcss -i ./tailwind.css -o ./_site/css/styles.css --watch",
+    "prod": "npx tailwindcss -i ./tailwind.css -o ./_site/css/styles.css",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "github:11ty/eleventy",
+    "tailwindcss": "^3.2.4"
+  }
+}
