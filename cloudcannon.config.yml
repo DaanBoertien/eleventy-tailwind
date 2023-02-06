@@ -29,7 +29,7 @@ paths:
   collections: &#39;&#39;
   layouts: _includes
   static: &#39;&#39;
-  uploads: uploads
+  uploads: assets/img/
   includes: _includes
   pages:
     &#39;&#39; # Lets you control the look and behaviour of the Source Editor.
