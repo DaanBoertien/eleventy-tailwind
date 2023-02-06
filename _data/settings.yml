@@ -1,0 +1,16 @@
+#Body bg
+body-bg-hue: "white"
+body-bg-shade: ""
+
+#Body text
+body-text-hue: "zinc"
+body-text-shade: "-700"
+body-text-font: "Source+Sans+Pro"
+
+serif-text-font: "Average"
+
+title-lang-primary: Titel NL
+title-lang-secondary: Title EN
+
+subtitle-lang-primary: Grid layout met Tailwind CSS
+subtitle-lang-secondary: Grid Layout with Tailwind CSS

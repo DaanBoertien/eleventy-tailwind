@@ -1,0 +1,44 @@
+{
+    "items": [
+        {
+            "nameLangPrimary": "Home",
+            "nameLangSecondary": "Home",
+            "urlLangPrimary": "/",
+            "urlLangSecondary": "/en/",
+            "urlClass": "/",
+            "urlActive": "home-active"
+          },
+          {
+            "nameLangPrimary": "Biografie",
+            "nameLangSecondary": "Biography",
+            "urlLangPrimary": "/biografie/",
+            "urlLangSecondary": "/en/biography/",
+            "urlClass": "/biografie.html",
+            "urlActive": "bio-active"
+          },
+          {
+            "nameLangPrimary": "Agenda",
+            "nameLangSecondary": "Schedule",
+            "urlLangPrimary": "/termine/",
+            "urlLangSecondary": "/en/schedule/",
+            "urlClass": "/concerts.html",
+            "urlActive": "calendar-active"
+          },
+          {
+            "nameLangPrimary": "Medien",
+            "nameLangSecondary": "Media",
+            "urlLangPrimary": "/medien/",
+            "urlLangSecondary": "/en/media/",
+            "urlClass": "/media.html",
+            "urlActive": "media-active"
+          },
+          {
+            "nameLangPrimary": "Kontakt",
+            "nameLangSecondary": "Contact",
+            "urlLangPrimary": "/kontakt/",
+            "urlLangSecondary": "/en/contact/",
+            "urlClass": "/contact.html",
+            "urlActive": "contact-active"
+          }
+    ]
+  }
