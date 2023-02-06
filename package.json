@@ -8,7 +8,8 @@
     "build": "npx @11ty/eleventy",
     "dev": "npx tailwindcss -i ./tailwind.css -o ./_site/css/styles.css --watch",
     "prod": "npx tailwindcss -i ./tailwind.css -o ./_site/css/styles.css",
-    "serve": "npx @11ty/eleventy --serve"
+    "serve": "npx @11ty/eleventy --serve",
+    "build:prod": "MY_ENVIRONMENT=production npx @11ty/eleventy && npm run prod"
   },
   "keywords": [],
   "author": "",
