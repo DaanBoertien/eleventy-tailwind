@@ -1,24 +1,13 @@
 <nav class="nav xs:relative md:sticky md:h-auto xs:w-screen z-20">
   <div class="white-bg"></div>
-  <button
-    class="md:hidden hamburger hamburger--collapse absolute top-6 right-6 z-20"
-    type="button"
-  >
+  <button class="md:hidden hamburger hamburger--collapse absolute top-6 right-6 z-20" type="button">
     <span class="hamburger-box">
       <span class="hamburger-inner"></span>
     </span>
   </button>
-  <ul
-    class="ul-nav md:flex md:bg-white justify-center items-center md:space-x-4 lg:space-x-8 fixed left-0 right-0 md:py-4 xs:pt-4 md:mt-0 xs:mb-10 md:mb-0 md:translate-y-0 xs:py-0 md:h-auto md:bottom-auto xs:relative xs:top-0 xs:bottom-0 xs:grid xs:place-items-center xs:h-14"
-  >
-    <li
-      class="w-32 xs:absolute xs:top-4 md:relative xs:left-8 md:top-auto md:left-auto"
-    >
-      <img
-        class="editable"
-        src="/assets/img/marlenlogo.svg"
-        alt=""
-      />
+  <ul class="ul-nav md:flex md:bg-white justify-center items-center md:space-x-4 lg:space-x-8 fixed left-0 right-0 md:py-4 xs:pt-4 md:mt-0 xs:mb-10 md:mb-0 md:translate-y-0 xs:py-0 md:h-auto md:bottom-auto xs:relative xs:top-0 xs:bottom-0 xs:grid xs:place-items-center xs:h-14">
+    <li class="w-32 xs:absolute xs:top-4 md:relative xs:left-8 md:top-auto md:left-auto">
+      <img class="editable" src="/uploads/marlenlogo.svg" width="1362" />
     </li>
     {# {% set navPages = collections.all | eleventyNavigation %} {%for link in
     navPages%}
@@ -28,33 +17,19 @@
     </li>
     {# #} 
     {% for item in navigation.items %}
-    <li
-      class="li-menu xs:mb-6 md:mb-0 xs:opacity-0 md:opacity-100 md:translate-y-0"
-    >
-      <a
-        class="text-cyan-800 uppercase relative transition ease-out tracking-wide pl-3 pr-3 pt-2 pb-2 hover:bg-primary/10 {% if page.url-active == item.url-active %}current font-normal{% endif %}"
-        href="{%if lang == 'primary'%}{{
+    <li class="li-menu xs:mb-6 md:mb-0 xs:opacity-0 md:opacity-100 md:translate-y-0">
+      <a class="text-cyan-800 uppercase relative transition ease-out tracking-wide pl-3 pr-3 pt-2 pb-2 hover:bg-primary/10 {% if page.url-active == item.url-active %}current font-normal{% endif %}" href="{%if lang == 'primary'%}{{
           item.urlLangPrimary
-        }}{%else%}{{ item.urlLangSecondary }}{%endif%}"
-        >{%if lang == 'primary'%}{{ item.nameLangPrimary }}{%else%}{{
+        }}{%else%}{{ item.urlLangSecondary }}{%endif%}">{%if lang == 'primary'%}{{ item.nameLangPrimary }}{%else%}{{
           item.nameLangSecondary
-        }}{%endif%}</a
-      >
+        }}{%endif%}</a>
     </li>
     {% endfor %}
 
  
     <li class="li-menu xs:opacity-0 md:opacity-100">
-      <a
-        href="{{ pathLangPrimary }}"
-        class="{%if lang == 'primary'%}text-primary {%else%}text-primary/70{%endif%}"
-        >{{site.langPrimary}} |</a
-      >
-      <a
-        href="{{ pathLangSecondary }}/"
-        class="{%if lang == 'secondary'%}text-primary {%else%}text-primary/70{%endif%}"
-        >{{site.langSecondary}}</a
-      >
+      <a href="{{ pathLangPrimary }}" class="{%if lang == 'primary'%}text-primary {%else%}text-primary/70{%endif%}">{{site.langPrimary}} |</a>
+      <a href="{{ pathLangSecondary }}/" class="{%if lang == 'secondary'%}text-primary {%else%}text-primary/70{%endif%}">{{site.langSecondary}}</a>
     </li>
   </ul>
 </nav>
