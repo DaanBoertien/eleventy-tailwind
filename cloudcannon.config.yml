@@ -18,6 +18,7 @@ collection_groups:
       - concerts
       - termine_DE
       - schedule_EN
+      - pages_DE
 
 # Set this to true to disable auto-detection of collections.
 collections_config_override: false
