@@ -9,6 +9,8 @@ collections_config:
     schemas:
       default:
         path: schemas/concert.md
+  termine (DE):
+  schedule (EN):
 
 # Control which collections are displayed in the CloudCannon site navigation,
 # and how those collections are grouped.
@@ -16,6 +18,10 @@ collection_groups:
   - heading: "Concerts"
     collections:
       - concerts
+  - heading: "Pages"
+    collections:
+      - termine (DE)
+      - schedule (EN)
 
 # Set this to true to disable auto-detection of collections.
 collections_config_override: false
