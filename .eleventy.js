@@ -25,10 +25,16 @@ module.exports = function(eleventyConfig) {
     });
     eleventyConfig.addFilter("pastConcerts", (concerts) => {
         const now = DateTime.local();
-        return concerts.filter(concert => {
+        return concerts
+          .filter(concert => {
             const concertDateTime = DateTime.fromJSDate(concert.date);
             return concertDateTime < now;
-        });
-    });
+          })
+          .sort((a, b) => {
+            const aDate = DateTime.fromJSDate(a.date);
+            const bDate = DateTime.fromJSDate(b.date);
+            return bDate - aDate;
+          });
+      });
 }
 

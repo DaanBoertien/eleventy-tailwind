@@ -11,7 +11,61 @@
       }}{%else%}{{ home.concertsLangSecondary }}{%endif%}
     </h1>
   </div>
-  {% for concert in collections.concerts %}
+  {% for concert in collections.concerts | futureConcerts %}
+  <div
+    class="grid max-w-full columns-1 place-items-center gap-2 py-8 shadow-xl filter backdrop-blur-lg xs:m-6 xs:mt-3 xs:bg-white/80 xs:px-3 xs:pb-12 md:m-6 md:w-2/3 md:bg-white/70 md:px-8 lg:w-1/2"
+  >
+    <p class="uppercase">
+      {%if lang == 'primary'%}{{ concert.data.cityLangPrimary }}{%else%}{{
+        concert.data.cityLangSecondary
+      }}{%endif%}
+    </p>
+    <p class="text-xl">
+      {%if lang == 'primary'%}{{ concert.data.date | concertDate }} |
+      {{ concert.data.date | concertTime }} {%else%}
+      {{
+        concert.data.date | concertDate }}
+      {%endif%}
+    </p>
+    <p class="mb-3 uppercase">
+      {%if lang == 'primary'%}{{ concert.data.hallLangPrimary }}{%else%}{{
+        concert.data.hallLangSecondary
+      }}{%endif%}
+    </p>
+    <p class="mb-3 text-center text-xl">
+      {%if lang == 'primary'%}{{ concert.data.programLangPrimary }}{%else%}{{
+        concert.data.programLangSecondary
+      }}{%endif%}
+    </p>
+    <div class="mb-4 text-center">
+      {%if lang == 'primary'%}{{ concert.data.musiciansLangPrimary }}{%else%}
+      {{
+        concert.data.musiciansLangSecondary
+      }}{%endif%}
+    </div>
+    <button
+      class="bg-primary px-4 py-2 uppercase tracking-wide text-white transition-colors hover:bg-primary/70"
+    >
+      <a target="_blank" href="https://www.st-michaelis.de/" class=""
+        >Tickets & Info</a
+      >
+    </button>
+  </div>
+  {% endfor %} 
+  
+  <div
+    class="grid max-w-full columns-1 place-items-center gap-2 py-8 shadow-xl filter backdrop-blur-lg xs:m-6 xs:mt-3 xs:bg-primary/80 xs:px-3 xs:pb-12 md:m-6 md:mb-2 md:w-2/3 md:bg-primary/70 md:mt-32 md:px-8 lg:w-1/2"
+  >
+    <h1 class=" text-center text-white">
+    HOI
+      {%if lang == 'primary'%}{{
+        home.archiveLangPrimary
+      }}{%else%}{{ home.archiveLangSecondary }}{%endif%}
+    </h1>
+  </div>
+
+
+  {% for concert in collections.concerts | pastConcerts %}
   <div
     class="grid max-w-full columns-1 place-items-center gap-2 py-8 shadow-xl filter backdrop-blur-lg xs:m-6 xs:mt-3 xs:bg-white/80 xs:px-3 xs:pb-12 md:m-6 md:w-2/3 md:bg-white/70 md:px-8 lg:w-1/2"
   >
@@ -49,63 +103,5 @@
       >
     </button>
   </div>
-  {% endfor %} {#
-  <div
-    class="grid max-w-full columns-1 place-items-center gap-2 py-8 shadow-xl filter backdrop-blur-lg xs:m-6 xs:mt-3 xs:bg-primary/80 xs:px-3 xs:pb-12 md:m-6 md:mb-2 md:mt-8 md:w-2/3 md:bg-primary/70 md:px-8 lg:w-1/2"
-  >
-    <h1 class="mt-5 text-center text-white">
-      {%if lang == 'primary'%}{{
-        site.data.home.archive - lang - primary
-      }}{%else%}{{ site.data.home.archive - lang - secondary }}{%endif%}
-    </h1>
-  </div>
-  #} {# {% assign past_concerts = site.concerts | where_exp: "concert",
-  "concert.date < site.time" %} {% for concert in past_concerts %}
-  <div
-    class="grid max-w-full columns-1 place-items-center gap-2 py-8 shadow-xl filter backdrop-blur-lg xs:m-6 xs:mt-3 xs:bg-white/80 xs:px-3 xs:pb-12 md:m-6 md:w-2/3 md:bg-white/70 md:px-8 lg:w-1/2"
-  >
-    <p class="uppercase">
-      {%if page.lang == 'primary'%}{{ concert.city - lang - primary }}{%else%}{{
-        concert.city - lang - secondary
-      }}{%endif%}
-    </p>
-    <p class="text-xl">
-      {%if page.lang == 'primary'%}{{
-        concert.date
-          | date
-            : "%d.%m.%Y,
-      %H:%M"
-      }}{%else%}{{ concert.date | date : "%d-%m-%Y, %H:%M" }}{%endif%}
-    </p>
-    <p class="mb-3 uppercase">
-      {%if page.lang == 'primary'%}{{ concert.hall - lang - primary }}{%else%}{{
-        concert.hall - lang - secondary
-      }}{%endif%}
-    </p>
-    <p class="mb-3 text-center text-xl">
-      {%if page.lang == 'primary'%}{{
-        concert.program - lang - primary
-      }}{%else%}{{ concert.program - lang - secondary }}{%endif%}
-    </p>
-    <div class="mb-4 text-center">
-      {%if page.lang == 'primary'%}{{
-        concert.musicians - lang - primary | markdownify
-      }}{%else%}{{
-        concert.musicians - lang - secondary | markdownify
-      }}{%endif%}
-    </div>
-    <button
-      class="bg-primary px-4 py-2 uppercase tracking-wide text-white transition-colors hover:bg-primary/70"
-    >
-      <a
-        target="_blank"
-        href="https://www.st-michaelis.de/"
-        class="editable"
-        data-i18n="tickets"
-        data-i18n="tickets"
-        >Tickets & Info</a
-      >
-    </button>
-  </div>
-  {% endfor %} #}
+  {% endfor %}
 </div>
