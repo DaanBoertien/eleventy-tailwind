@@ -2,12 +2,7 @@
   command = "npm run build:prod"
   publish = "_site"
 
-[[plugins]]
-package = "netlify-plugin-cache"
 
-  [plugins.inputs]
-  # Cache the node_modules directory
-  paths = ["node_modules"]
 
 
 
