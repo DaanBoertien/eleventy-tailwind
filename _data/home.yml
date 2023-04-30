@@ -7,7 +7,7 @@ quote-lang-primary:
 quote-lang-secondary:
   “So Marlen Korf sang with an exceptionally beautiful voice and deep inwardness
   and bright sound.”
-concerts-lang-primary: Termine
-concerts-lang-secondary: Concerts
-archive-lang-primary: Vergangene Termine
-archive-lang-secondary: Past Concerts
+concertsLangPrimary: "Termine"
+concertsLangSecondary: "Concerts"
+archiveLangPrimary: Vergangene Termine
+archiveLangSecondary: Past Concerts
