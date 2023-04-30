@@ -9,6 +9,5 @@ package = "netlify-plugin-cache"
   # Cache the node_modules directory
   paths = ["node_modules"]
 
-  # Cache custom directory (if necessary)
-  extraDirs = [".cache"]
+
 
