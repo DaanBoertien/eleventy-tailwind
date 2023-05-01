@@ -976,10 +976,11 @@
     }
     .ul-nav {
       background: white;
+      height: 100px;
     }
   
     .nav {
-      background: rgba(0, 0, 0, 0.1);
+      background: rgba(0, 0, 0, 0);
       transition: all 0.3s ease-out;
       position: absolute;
       left: 0;
