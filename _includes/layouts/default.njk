@@ -26,6 +26,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <link rel="stylesheet" href="{{
     "/assets/css/main.css"
@@ -66,6 +67,17 @@
       console.log(googleFontCapitalized);
       //Add CSS to Body
       document.getElementsByTagName("body")[0].style.fontFamily = googleFontCSS;
+    </script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
     </script>
   </body>
 </html>

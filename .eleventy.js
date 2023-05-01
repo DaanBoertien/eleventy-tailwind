@@ -4,6 +4,7 @@ const { DateTime } = require("luxon");
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("assets");
+    // eleventyConfig.addPassthroughCopy("admin");
     eleventyConfig.addDataExtension("yml", contents => yaml.load(contents));
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
     eleventyConfig.addFilter("concertDate", (dateObj) => {

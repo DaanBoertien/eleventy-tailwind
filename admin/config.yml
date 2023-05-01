@@ -1,0 +1,41 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+media_folder: "assets/img/uploads"
+
+collections:
+  - name: "home"
+    label: "Home"
+    files:
+      - file: "_data/home.yml"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - label: "Name"
+            name: "name"
+            widget: "string"
+          - label: "Instrument (Primary Language)"
+            name: "instrument-lang-primary"
+            widget: "string"
+          - label: "Instrument (Secondary Language)"
+            name: "instrument-lang-secondary"
+            widget: "string"
+          - label: "Quote (Primary Language)"
+            name: "quote-lang-primary"
+            widget: "text"
+          - label: "Quote (Secondary Language)"
+            name: "quote-lang-secondary"
+            widget: "text"
+          - label: "Concerts (Primary Language)"
+            name: "concertsLangPrimary"
+            widget: "string"
+          - label: "Concerts (Secondary Language)"
+            name: "concertsLangSecondary"
+            widget: "string"
+          - label: "Archive (Primary Language)"
+            name: "archiveLangPrimary"
+            widget: "string"
+          - label: "Archive (Secondary Language)"
+            name: "archiveLangSecondary"
+            widget: "string"

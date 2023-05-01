@@ -977,10 +977,11 @@
     .ul-nav {
       background: white;
       height: 100px;
+      position: fixed;
     }
   
     .nav {
-      background: rgba(0, 0, 0, 0);
+      background: white;
       transition: all 0.3s ease-out;
       position: absolute;
       left: 0;
