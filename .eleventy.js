@@ -1,6 +1,9 @@
 const yaml = require("js-yaml");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const { DateTime } = require("luxon");
+const { format } = require('date-fns');
+const { de } = require('date-fns/locale');
+const { en } = require('date-fns/locale');
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("assets");
@@ -36,6 +39,14 @@ module.exports = function(eleventyConfig) {
             const bDate = DateTime.fromJSDate(b.date);
             return bDate - aDate;
           });
+      });
+      
+
+    
+    // Custom date filter
+    eleventyConfig.addFilter('date', (date, dateFormat, localeString = 'en') => {
+        const locale = localeString === 'de' ? de : en;
+        return format(new Date(date), dateFormat, { locale });
       });
 }
 

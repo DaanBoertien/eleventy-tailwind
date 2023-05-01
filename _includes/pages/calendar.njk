@@ -21,11 +21,17 @@
       }}{%endif%}
     </p>
     <p class="text-xl">
-      {%if lang == 'primary'%}{{ concert.data.date | concertDate }} |
-      {{ concert.data.date | concertTime }} {%else%}
-      {{
-        concert.data.date | concertDate }}
-      {%endif%}
+      {%if lang == 'primary'%}
+      {% if concert.data.time %}
+        {{ concert.data.date | date("d. MMMM yyyy", "de") }}, {{ concert.data.time }}
+      {% else %}
+        {{ concert.data.date | date("d. MMMM yyyy", "de") }}
+      {% endif %}{%else%}
+      {% if concert.data.time %}
+        {{ concert.data.date | date("d MMMM yyyy", "en") }}, {{ concert.data.time }}
+      {% else %}
+        {{ concert.data.date | date("d MMMM yyyy", "en") }}
+      {% endif %}{% endif %}
     </p>
     <p class="mb-3 uppercase">
       {%if lang == 'primary'%}{{ concert.data.hallLangPrimary }}{%else%}{{
@@ -36,6 +42,7 @@
       {%if lang == 'primary'%}{{ concert.data.programLangPrimary }}{%else%}{{
         concert.data.programLangSecondary
       }}{%endif%}
+      
     </p>
     <div class="mb-4 text-center">
       {%if lang == 'primary'%}{{ concert.data.musiciansLangPrimary }}{%else%}
@@ -75,10 +82,23 @@
       }}{%endif%}
     </p>
     <p class="text-xl">
-      {%if lang == 'primary'%}{{ concert.data.date | concertDate }} |
+      {# {%if lang == 'primary'%}{{ concert.data.date | concertDate }} |
       {{ concert.data.date | concertTime }} {%else%}{{
         concert.data.date | concertDate
-      }}{%endif%}
+      }}{%endif%} #}
+      {%if lang == 'primary'%}
+      {% if concert.data.time %}
+        {{ concert.data.date | date("d. MMMM yyyy", "de") }}, {{ concert.data.time }}
+      {% else %}
+        {{ concert.data.date | date("d. MMMM yyyy", "de") }}
+      {% endif %}{%else%}
+      {% if concert.data.time %}
+        {{ concert.data.date | date("d MMMM yyyy", "en") }}, {{ concert.data.time }}
+      {% else %}
+        {{ concert.data.date | date("d MMMM yyyy", "en") }}
+      {% endif %}{% endif %}
+
+
     </p>
     <p class="mb-3 uppercase">
       {%if lang == 'primary'%}{{ concert.data.hallLangPrimary }}{%else%}{{
