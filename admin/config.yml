@@ -45,6 +45,7 @@ collections:
     folder: "concerts"
     create: true
     slug: "{{date | date('YYYY-MM-DD')}}-{{hallLangPrimary | slugify}}"
+    summary: "{{date | date('D-M-YYYY')}}, {{hallLangPrimary}}"
     fields:
       - label: Tags
         name: tags
