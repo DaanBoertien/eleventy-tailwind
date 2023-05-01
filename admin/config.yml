@@ -39,3 +39,47 @@ collections:
           - label: "Archive (Secondary Language)"
             name: "archiveLangSecondary"
             widget: "string"
+  - name: concerts
+    label: Concerts
+    label_singular: "Concert"
+    folder: "concerts"
+    create: true
+    slug: "{{date | date('YYYY-MM-DD')}}-{{hallLangPrimary | slugify}}"
+    fields:
+      - label: Tags
+        name: tags
+        widget: hidden
+        default: concerts
+      - label: Title
+        name: title
+        widget: string
+      - label: City (Primary Language)
+        name: cityLangPrimary
+        widget: string
+      - label: City (Secondary Language)
+        name: cityLangSecondary
+        widget: string
+      - label: Date
+        name: date
+        widget: datetime
+      - label: Hall (Primary Language)
+        name: hallLangPrimary
+        widget: string
+      - label: Hall (Secondary Language)
+        name: hallLangSecondary
+        widget: string
+      - label: Program (Primary Language)
+        name: programLangPrimary
+        widget: text
+      - label: Program (Secondary Language)
+        name: programLangSecondary
+        widget: text
+      - label: Musicians (Primary Language)
+        name: musiciansLangPrimary
+        widget: text
+      - label: Musicians (Secondary Language)
+        name: musiciansLangSecondary
+        widget: text
+      - label: Link
+        name: link
+        widget: string
