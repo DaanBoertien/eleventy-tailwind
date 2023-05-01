@@ -51,9 +51,6 @@ collections:
         name: tags
         widget: hidden
         default: concerts
-      - label: Title
-        name: title
-        widget: string
       - label: City (Primary Language)
         name: cityLangPrimary
         widget: string
