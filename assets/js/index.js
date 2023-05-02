@@ -17,13 +17,16 @@ hamburger.addEventListener("click", () => {
 })
 
 //メインスライド
+var gallerySliderElement = document.querySelector('.gallery-slider');
+var imagesCount = parseInt(gallerySliderElement.getAttribute('data-images-count'), 10);
+console.log(imagesCount);
 var slider = new Swiper ('.gallery-slider', {
     effect: "fade",
     
     slidesPerView: 1,
     centeredSlides: true,
     loop: true,
-    loopedSlides: 5, //スライドの枚数と同じ値を指定
+    loopedSlides: imagesCount, //スライドの枚数と同じ値を指定
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
