@@ -3,17 +3,19 @@
   class="ml-6 mr-6 mb-6 min-h-screen place-items-center bg-[url('/assets/img/marlen-home.jpg')] bg-cover xs:pb-1 xs:pt-4 md:grid md:bg-fixed md:bg-right-top"
 >
   <div
-    class="grid max-w-full columns-1 place-items-center gap-2 py-8 shadow-xl filter backdrop-blur-lg xs:m-6 xs:mt-3 xs:bg-primary/80 xs:px-3 xs:pb-12 md:m-6 md:mb-2 md:w-2/3 md:bg-primary/70 md:mt-32 md:px-8 lg:w-1/2"
+    class="grid max-w-full columns-1 place-items-center gap-2 py-8 shadow-xl filter backdrop-blur-lg xs:m-6 xs:mt-28 xs:bg-primary/80 xs:px-3 xs:pb-8 md:m-6 md:mb-2 md:w-2/3 md:bg-primary/70 md:mt-32 md:px-8 lg:w-1/2"
   >
-    <h1 class=" text-center text-white">
-      {%if lang == 'primary'%}{{
-        calendar.concertsLangPrimary
-      }}{%else%}{{ calendar.concertsLangSecondary }}{%endif%}
+    <h1
+      class="text-center text-white uppercase text-3xl font-light tracking-wider"
+    >
+      {%if lang == 'primary'%}{{ calendar.concertsLangPrimary }}{%else%}{{
+        calendar.concertsLangSecondary
+      }}{%endif%}
     </h1>
   </div>
   {% for concert in collections.concerts | futureConcerts %}
   <div
-    class="grid max-w-full columns-1 place-items-center gap-2 py-8 shadow-xl filter backdrop-blur-lg xs:m-6 xs:mt-3 xs:bg-white/80 xs:px-3 xs:pb-12 md:m-6 md:w-2/3 md:bg-white/70 md:px-8 lg:w-1/2"
+    class="grid max-w-full columns-1 place-items-center gap-2 py-8 shadow-xl filter backdrop-blur-lg xs:m-6 xs:mt-3 xs:bg-white/80 xs:px-3 xs:pb-8 md:m-6 md:w-2/3 md:bg-white/70 md:px-8 lg:w-1/2"
   >
     <p class="uppercase">
       {%if lang == 'primary'%}{{ concert.data.cityLangPrimary }}{%else%}{{
@@ -21,16 +23,16 @@
       }}{%endif%}
     </p>
     <p class="text-xl">
-      {%if lang == 'primary'%}
-      {% if concert.data.time %}
-        {{ concert.data.date | date("d. MMMM yyyy", "de") }}, {{ concert.data.time }}
+      {%if lang == 'primary'%} {% if concert.data.time %}
+      {{ concert.data.date | date("d. MMMM yyyy", "de") }},
+      {{ concert.data.time }}
       {% else %}
-        {{ concert.data.date | date("d. MMMM yyyy", "de") }}
-      {% endif %}{%else%}
-      {% if concert.data.time %}
-        {{ concert.data.date | date("d MMMM yyyy", "en") }}, {{ concert.data.time }}
+      {{ concert.data.date | date("d. MMMM yyyy", "de") }}
+      {% endif %}{%else%} {% if concert.data.time %}
+      {{ concert.data.date | date("d MMMM yyyy", "en") }},
+      {{ concert.data.time }}
       {% else %}
-        {{ concert.data.date | date("d MMMM yyyy", "en") }}
+      {{ concert.data.date | date("d MMMM yyyy", "en") }}
       {% endif %}{% endif %}
     </p>
     <p class="mb-3 uppercase">
@@ -42,13 +44,11 @@
       {%if lang == 'primary'%}{{ concert.data.programLangPrimary }}{%else%}{{
         concert.data.programLangSecondary
       }}{%endif%}
-      
     </p>
     <div class="mb-4 text-center">
-      {%if lang == 'primary'%}{{ concert.data.musiciansLangPrimary }}{%else%}
-      {{
-        concert.data.musiciansLangSecondary
-      }}{%endif%}
+      {%if lang == 'primary'%}{{
+        concert.data.musiciansLangPrimary | md | safe
+      }}{%else%} {{ concert.data.musiciansLangSecondary | md | safe }}{%endif%}
     </div>
     <button
       class="bg-primary px-4 py-2 uppercase tracking-wide text-white transition-colors hover:bg-primary/70"
@@ -58,19 +58,19 @@
       >
     </button>
   </div>
-  {% endfor %} 
-  
+  {% endfor %}
+
   <div
-    class="grid max-w-full columns-1 place-items-center gap-2 py-8 shadow-xl filter backdrop-blur-lg xs:m-6 xs:mt-3 xs:bg-primary/80 xs:px-3 xs:pb-12 md:m-6 md:mb-2 md:w-2/3 md:bg-primary/70 md:mt-32 md:px-8 lg:w-1/2"
+    class="grid max-w-full columns-1 place-items-center gap-2 py-8 shadow-xl filter backdrop-blur-lg xs:m-6 xs:mt-3 xs:bg-primary/80 xs:px-3 xs:pb-8 md:m-6 md:mb-2 md:w-2/3 md:bg-primary/70 md:mt-32 md:px-8 lg:w-1/2"
   >
-    <h1 class=" text-center text-white uppercase">
-    
-      {%if lang == 'primary'%}{{
-        calendar.archiveLangPrimary
-      }}{%else%}{{ calendar.archiveLangSecondary }}{%endif%}
+    <h1
+      class="text-center text-white uppercase text-3xl font-light tracking-wider"
+    >
+      {%if lang == 'primary'%}{{ calendar.archiveLangPrimary }}{%else%}{{
+        calendar.archiveLangSecondary
+      }}{%endif%}
     </h1>
   </div>
-
 
   {% for concert in collections.concerts | pastConcerts %}
   <div
@@ -85,20 +85,17 @@
       {# {%if lang == 'primary'%}{{ concert.data.date | concertDate }} |
       {{ concert.data.date | concertTime }} {%else%}{{
         concert.data.date | concertDate
-      }}{%endif%} #}
-      {%if lang == 'primary'%}
-      {% if concert.data.time %}
-        {{ concert.data.date | date("d. MMMM yyyy", "de") }}, {{ concert.data.time }}
+      }}{%endif%} #} {%if lang == 'primary'%} {% if concert.data.time %}
+      {{ concert.data.date | date("d. MMMM yyyy", "de") }},
+      {{ concert.data.time }}
       {% else %}
-        {{ concert.data.date | date("d. MMMM yyyy", "de") }}
-      {% endif %}{%else%}
-      {% if concert.data.time %}
-        {{ concert.data.date | date("d MMMM yyyy", "en") }}, {{ concert.data.time }}
+      {{ concert.data.date | date("d. MMMM yyyy", "de") }}
+      {% endif %}{%else%} {% if concert.data.time %}
+      {{ concert.data.date | date("d MMMM yyyy", "en") }},
+      {{ concert.data.time }}
       {% else %}
-        {{ concert.data.date | date("d MMMM yyyy", "en") }}
+      {{ concert.data.date | date("d MMMM yyyy", "en") }}
       {% endif %}{% endif %}
-
-
     </p>
     <p class="mb-3 uppercase">
       {%if lang == 'primary'%}{{ concert.data.hallLangPrimary }}{%else%}{{
@@ -111,9 +108,9 @@
       }}{%endif%}
     </p>
     <div class="mb-4 text-center">
-      {%if lang == 'primary'%}{{ concert.data.musiciansLangPrimary }}{%else%}{{
-        concert.data.musiciansLangSecondary
-      }}{%endif%}
+      {%if lang == 'primary'%}{{
+        concert.data.musiciansLangPrimary | md | safe
+      }}{%else%}{{ concert.data.musiciansLangSecondary | md | safe }}{%endif%}
     </div>
     <button
       class="bg-primary px-4 py-2 uppercase tracking-wide text-white transition-colors hover:bg-primary/70"

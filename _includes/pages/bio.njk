@@ -3,14 +3,14 @@
   class="ml-6 mr-6 mb-6 grid min-h-screen place-items-start bg-[url('/assets/img/marlen-home.jpg')] bg-cover bg-fixed bg-right-top"
 >
   <div
-    class="grid w-auto columns-1 place-items-start gap-2 py-8 shadow-xl backdrop-blur-lg xs:m-3 xs:bg-white/90 xs:px-3 xs:pb-12 md:mt-32 md:m-6 md:w-2/3 md:bg-white/70 md:px-8 lg:w-1/2"
+    class="grid w-auto columns-1 place-items-start gap-2 py-8 shadow-xl backdrop-blur-lg xs:m-3 xs:mt-32 xs:bg-white/90 xs:px-3 xs:pb-12 md:mt-32 md:m-6 md:w-2/3 md:bg-white/70 md:px-8 lg:w-1/2"
   >
     <h1 class="self-end">
       {%if lang == 'primary'%}{{ bio.titleLangPrimary }}{%else%}{{
         bio.titleLangSecondary
       }}{%endif%}
     </h1>
-    <div class="self-start text-lg font-light xs:text-sm md:text-lg">
+    <div class="self-start text-lg font-light xs:text-sm md:text-lg prose">
       {%if lang == 'primary'%}{{ bio.bioLangPrimary | md | safe }}{%else%}{{
         bio.bioLangSecondary | md | safe
       }}{%endif%}
