@@ -104,7 +104,9 @@ collections:
       - label: Link
         name: link
         widget: string
+
       - file: "_data/contact.yml"
+        name: "Contact"
         label: "Contact Information"
         fields:
           - label: "Title"
