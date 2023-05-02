@@ -1,8 +1,16 @@
----
-pathLangPrimary: /kontakt
-pathLangSecondary: /en/contact
----
+{% set lang = lang %}
 
+<h1>{{ contact.title[lang] }}</h1>
+<p>E-Mail: {{ contact.email[lang] }}</p>
+
+<h2>Photographers:</h2>
+<ul>
+  {% for photographer in contact.photographers %}
+    <li>{{ photographer.name }}</li>
+  {% endfor %}
+</ul>
+
+<p>Web Design: {{ contact.webDesign[lang] }}</p>
 <div
   data-speed=".1"
   class="ml-6 mr-6 mb-6 min-h-screen place-items-start bg-[url('/assets/img/marlen-feet.jpg')] bg-cover bg-fixed bg-right-top xs:pt-4 md:pt-20"
@@ -15,7 +23,7 @@ pathLangSecondary: /en/contact
       class="self-start text-lg font-light text-cyan-900 xs:text-sm md:text-lg"
     ></p>
 
-    <p class="mb-6 editable" data-cms-bind="#email">
+    <p class="mb-6>
       E-Mail: mail@marlenkorf.com
     </p>
 

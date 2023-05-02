@@ -5,7 +5,13 @@ const { format } = require('date-fns');
 const { de } = require('date-fns/locale');
 const { en } = require('date-fns/locale');
 
+
+
 module.exports = function(eleventyConfig) {
+    
+    eleventyConfig.addCollection("renderedPages", function (collectionApi) {
+        return collectionApi.getAll().filter((item) => item.data.render !== false);
+      });
     eleventyConfig.addPassthroughCopy("assets");
     eleventyConfig.addPassthroughCopy("admin");
     eleventyConfig.addDataExtension("yml", contents => yaml.load(contents));
@@ -48,5 +54,7 @@ module.exports = function(eleventyConfig) {
         const locale = localeString === 'de' ? de : en;
         return format(new Date(date), dateFormat, { locale });
       });
+
+     
 }
 

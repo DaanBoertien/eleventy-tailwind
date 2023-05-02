@@ -1,0 +1,27 @@
+title:
+  secondary: Contact
+  primary: Kontakt
+
+email:
+  secondary: mail@marlenkorf.com
+  primary: mail@marlenkorf.com
+
+photographers:
+  secondary:
+    - name: Friederike Johanna Reeb
+    - name: Julia Löwe
+    - name: Jörg Landsberg
+      alias: Nymphe
+    - name: Christian Engert
+      alias: Grisette
+  primary:
+    - name: Friederike Johanna Reeb
+    - name: Julia Löwe
+    - name: Jörg Landsberg
+      alias: Nymphe
+    - name: Christian Engert
+      alias: Grisette
+
+webDesign:
+  secondary: Daan Boertien (EN)
+  primary: Daan Boertien (DE)

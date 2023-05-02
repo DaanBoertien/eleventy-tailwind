@@ -7,8 +7,8 @@
   >
     <h1 class=" text-center text-white">
       {%if lang == 'primary'%}{{
-        home.concertsLangPrimary
-      }}{%else%}{{ home.concertsLangSecondary }}{%endif%}
+        calendar.concertsLangPrimary
+      }}{%else%}{{ calendar.concertsLangSecondary }}{%endif%}
     </h1>
   </div>
   {% for concert in collections.concerts | futureConcerts %}
@@ -66,8 +66,8 @@
     <h1 class=" text-center text-white uppercase">
     
       {%if lang == 'primary'%}{{
-        home.archiveLangPrimary
-      }}{%else%}{{ home.archiveLangSecondary }}{%endif%}
+        calendar.archiveLangPrimary
+      }}{%else%}{{ calendar.archiveLangSecondary }}{%endif%}
     </h1>
   </div>
 
