@@ -1,0 +1,16 @@
+images:
+  - src: /assets/img/uploads/marlen-home.jpg
+    photographer: John Doe
+    alt: Marlen at the HfmT
+  - src: /assets/img/uploads/marlen-mirror.jpg
+    photographer: Jane Smith
+    alt: Marlen in front of a mirror
+  - src: /assets/img/uploads/marlen-sits.jpg
+    photographer: John Doe
+    alt: Marlen sitting
+  - src: /assets/img/uploads/marlen-feet.jpg
+    photographer: Jane Smith
+    alt: Marlen's feet
+  - src: /assets/img/uploads/marlen-black-white.jpg
+    photographer: John Doe
+    alt: Marlen in black and white

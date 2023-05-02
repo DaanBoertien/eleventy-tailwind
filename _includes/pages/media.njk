@@ -2,21 +2,15 @@
   <div class="gallery">
     <div class="swiper-container gallery-slider relative">
       <div class="swiper-wrapper">
+        {% for image in media.images %}
         <div class="swiper-slide">
-          <img src="/assets/img/marlen-home.jpg" alt="" />
+          <img
+            src="{{ image.src }}"
+            alt="{{ image.alt }}"
+            title="Photographer: {{ image.photographer }}"
+          />
         </div>
-        <div class="swiper-slide">
-          <img src="/assets/img/marlen-mirror.jpg" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="/assets/img/marlen-sits.jpg" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="/assets/img/marlen-feet.jpg" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="/assets/img/marlen-black-white.jpg" alt="" />
-        </div>
+        {% endfor %}
       </div>
       <div class="swiper-button-prev xs:hidden md:block"></div>
       <div class="swiper-button-next xs:hidden md:block"></div>
@@ -24,21 +18,15 @@
 
     <div class="swiper-container gallery-thumbs">
       <div class="swiper-wrapper">
+        {% for image in media.images %}
         <div class="swiper-slide">
-          <img src="/assets/img/marlen-home.jpg" alt="" />
+          <img
+            src="{{ image.src }}"
+            alt="{{ image.alt }}"
+            title="Photographer: {{ image.photographer }}"
+          />
         </div>
-        <div class="swiper-slide">
-          <img src="/assets/img/marlen-mirror.jpg" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="/assets/img/marlen-sits.jpg" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="/assets/img/marlen-feet.jpg" alt="" />
-        </div>
-        <div class="swiper-slide">
-          <img src="/assets/img/marlen-black-white.jpg" alt="" />
-        </div>
+        {% endfor %}
       </div>
     </div>
   </div>
