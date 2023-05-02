@@ -34,8 +34,9 @@ var slider = new Swiper ('.gallery-slider', {
 });
 
 //サムネイルスライド
+var isMobile = window.innerWidth <= 768;
 var thumbs = new Swiper ('.gallery-thumbs', {
-    slidesPerView: 'auto',
+    slidesPerView: isMobile ? 3 : 'auto',
     spaceBetween: 10,
     centeredSlides: true,
     loop: true,
