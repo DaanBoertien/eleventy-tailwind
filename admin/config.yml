@@ -58,49 +58,51 @@ collections:
           - label: "Archive (Secondary Language)"
             name: "archiveLangSecondary"
             widget: "string"
-  - name: concerts
-    label: Concerts
-    label_singular: "Concert"
-    folder: "concerts"
-    create: true
-    slug: "{{date | date('YYYY-MM-DD')}}-{{hallLangPrimary | slugify}}"
-    summary: "{{date | date('D-M-YYYY')}}, {{hallLangPrimary}}"
-    fields:
-      - label: Tags
-        name: tags
-        widget: hidden
-        default: concerts
-      - label: City (Primary Language)
-        name: cityLangPrimary
-        widget: string
-      - label: City (Secondary Language)
-        name: cityLangSecondary
-        widget: string
-      - label: Date
-        name: date
-        widget: date
-      - label: Time
-        name: time
-        widget: string
-        required: false
-      - label: Hall (Primary Language)
-        name: hallLangPrimary
-        widget: string
-      - label: Hall (Secondary Language)
-        name: hallLangSecondary
-        widget: string
-      - label: Program (Primary Language)
-        name: programLangPrimary
-        widget: text
-      - label: Program (Secondary Language)
-        name: programLangSecondary
-        widget: text
-      - label: Musicians (Primary Language)
-        name: musiciansLangPrimary
-        widget: text
-      - label: Musicians (Secondary Language)
-        name: musiciansLangSecondary
-        widget: text
-      - label: Link
-        name: link
-        widget: string
+      - file: "_data/contact.yml"
+        name: "Contact"
+        label: "Contact Information"
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "object"
+            fields:
+              - label: "English"
+                name: "en"
+                widget: "string"
+              - label: "German"
+                name: "de"
+                widget: "string"
+          - label: "Email"
+            name: "email"
+            widget: "object"
+            fields:
+              - label: "English"
+                name: "en"
+                widget: "string"
+              - label: "German"
+                name: "de"
+                widget: "string"
+          - label: "Photographers"
+            name: "photographers"
+            widget: "object"
+            fields:
+              - label: "English"
+                name: "en"
+                widget: "list"
+                fields:
+                  - label: "Name"
+                    name: "name"
+                    widget: "string"
+                  - label: "Alias"
+                    name: "alias"
+                    widget: "string"
+                    required: false
+              - label: "German"
+                name: "de"
+                widget: "list"
+                fields:
+                  - label: "Name"
+                    name: "name"
+                    widget: "string"
+                  # - label: "Alias"
+                  #   name: "alias"
