@@ -3,6 +3,8 @@ titleSecondaryLanguage: Contact
 
 email: mail@marlenkorf.com
 
+photographersPrimaryLanguage: Fotografen
+photographersSecondaryLanguage: Photographers
 photographers:
   - name: Friederike Johanna Reeb
   - name: Julia Löwe
@@ -10,4 +12,4 @@ photographers:
   - name: Christian Engert (Grisette)
 
 webDesign: Web Design
-webDesigner: Daan Boertien (EN)
+webDesigner: Daan Boertien
