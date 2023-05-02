@@ -4,6 +4,7 @@ const { DateTime } = require("luxon");
 const { format } = require('date-fns');
 const { de } = require('date-fns/locale');
 const { en } = require('date-fns/locale');
+const markdownIt = require("markdown-it");
 
 
 
@@ -16,6 +17,18 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("admin");
     eleventyConfig.addDataExtension("yml", contents => yaml.load(contents));
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  
+    const md = markdownIt({
+        html: true,
+        breaks: true,
+        linkify: true,
+      });
+      eleventyConfig.addFilter("md", (content) => {
+        return md.render(content);
+      });
+    
+      eleventyConfig.setLibrary("md", md);
+
     eleventyConfig.addFilter("concertDate", (dateObj) => {
         return DateTime.fromJSDate(dateObj).setLocale('de').toLocaleString(DateTime.DATE_FULL);
     });
