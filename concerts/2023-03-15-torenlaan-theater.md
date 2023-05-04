@@ -2,7 +2,7 @@
 title: Schubertiade
 cityLangPrimary: Zeist
 cityLangSecondary: Zeist
-date: 2023-03-15T20:15:30+01:00
+date: 2023-03-15
 hallLangPrimary: Torenlaan Theater
 hallLangSecondary: Torenlaan Theater
 programLangPrimary: Lieder von Schubert
