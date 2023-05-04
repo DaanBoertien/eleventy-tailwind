@@ -1,30 +1,34 @@
-<div data-speed="-.4" class="parallax ml-6 mr-6 grid min-h-screen place-items-center bg-[url('/assets/img/marlen-home.jpg')] bg-cover bg-right-top">
-  <div class="grid columns-1 place-items-center gap-2 py-8 px-8 text-3xl tracking-wide text-cyan-800 shadow-xl backdrop-blur-md xs:translate-y-20 xs:bg-white/60 md:translate-y-0 md:bg-white/50 md:text-4xl">
+<div
+  data-speed="-.4"
+  class="parallax ml-6 mr-6 grid min-h-screen place-items-center bg-[url('/assets/img/marlen-home.jpg')] bg-cover bg-right-top"
+>
+  <div
+    class="grid columns-1 place-items-center gap-2 py-8 px-8 text-3xl tracking-wide text-cyan-800 shadow-xl backdrop-blur-md xs:translate-y-20 xs:bg-white/60 md:translate-y-0 md:bg-white/50 md:text-4xl"
+  >
     <p class="editable self-end font-extralight uppercase drop-shadow">
-      Marlen Korf
+      {{ home.name }}
     </p>
     <div class="self-start font-extralight uppercase drop-shadow">
       {%if lang == 'primary'%}
-      <p class="editable">Sopran</p>
+      <p class="editable">{{ home.instrumentLangPrimary }}</p>
       {%else%}
-      <p class="editable">Soprano</p>
+      <p class="editable">{{ home.instrumentLangSecondary }}</p>
       {%endif%}
     </div>
   </div>
 </div>
 
 <div class="parallax grid place-items-center bg-white">
-  <div class="mt-10 mb-10 ml-6 mr-6 max-w-xl text-center font-['{{
-      site.data.settings.serif-text-font
-    }}'] text-2xl text-slate-500">
+  <div
+    class="mt-10 mb-10 ml-6 mr-6 max-w-xl text-center font-average text-2xl text-slate-500"
+  >
     {%if lang == 'primary'%}
     <p class="editable">
-      “Also sang Marlen Korf mit ausgesprochen schöner Stimme, tiefer
-      Innerlichkeit und leuchtendem Klang.”
+      {{ home.quoteLangPrimary }}
     </p>
     {%else%}
     <p class="editable">
-      “So Marlen Korf sang with an exceptionally beautiful voice and deep inwardness and bright sound.”
+      {{ home.quoteLangPrimary }}
     </p>
     {%endif%}
   </div>

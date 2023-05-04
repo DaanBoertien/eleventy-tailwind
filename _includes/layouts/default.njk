@@ -3,18 +3,17 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
-    <title>{{ title }} -</title>
+    <title>{{ home.name }} - {{ title }}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family={{
-        site.data.settings.serif - text - font
-      }}&family={{
-        site.data.settings.body - text - font
-      }}:ital,wght@0,100;0,300;0,400;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Average&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -41,7 +40,7 @@
     }
   </style>
 
-  <body class="overflow-x-hidden min-h-screen">
+  <body class="overflow-x-hidden min-h-screen font-source-sans-pro">
     {% include "partials/_nav.njk" %}
     {{ content | safe }}
     {% include "partials/_footer.njk" %}
@@ -61,22 +60,7 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="/assets/js/index.js"></script>
-    <script>
-      //Make google font suitable for both CSS and Google Font CDN
-      // const googleFont = "{{site.data.settings.body-text-font}}"
-      console.log(googleFont);
-      googleFontCSS = googleFont.split("+").join(" ");
-      googleFontCapitalized = googleFont
-        .split(" ")
-        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-        .join("+");
-
-      console.log(googleFontCSS);
-      //Not necesarry for now
-      console.log(googleFontCapitalized);
-      //Add CSS to Body
-      document.getElementsByTagName("body")[0].style.fontFamily = googleFontCSS;
-    </script>
+    <script></script>
     <script>
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", (user) => {

@@ -154,3 +154,13 @@ collections:
       - label: "Link"
         name: "link"
         widget: "string"
+  - name: "settings"
+    label: "Settings"
+    files:
+      - name: "colors"
+        label: "Colors"
+        file: "_data/colors.yml"
+        fields:
+          - label: "Primary Color"
+            name: "primary"
+            widget: "color"
