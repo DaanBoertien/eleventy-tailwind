@@ -1,4 +1,5 @@
 ---
+tags: concerts
 title: Schubertiade
 cityLangPrimary: Zeist
 cityLangSecondary: Zeist

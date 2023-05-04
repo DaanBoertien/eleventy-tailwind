@@ -118,9 +118,10 @@ collections:
     slug: "{{date}}-{{hallLangPrimary | slugify}}"
     summary: "{{date | date('D.M.YYYY')}} - {{hallLangPrimary}}"
     fields:
-      - label: "Title"
-        name: "title"
-        widget: "string"
+      - label: Tags
+        name: tags
+        widget: hidden
+        default: ["concerts"]
       - label: "City (Primary Language)"
         name: "cityLangPrimary"
         widget: "string"
