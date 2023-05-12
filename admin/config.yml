@@ -160,8 +160,8 @@ collections:
     files:
       - name: "colors"
         label: "Colors"
-        file: "_data/colors.yml"
+        file: "_data/settings.yml"
         fields:
           - label: "Primary Color"
-            name: "primary"
+            name: "colorPrimary"
             widget: "color"
