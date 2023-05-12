@@ -16,6 +16,7 @@ module.exports = {
       colors: {
         primary: settings.colorPrimary,
         secondary: settings.colorSecondary,
+        background: settings.colorBackground,
       },
       fontFamily: {
         'source-sans-pro': ['Source Sans Pro', 'sans-serif'],

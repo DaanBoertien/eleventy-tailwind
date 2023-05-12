@@ -36,15 +36,18 @@
         175,
         154,
         89
-      ); /* Change the color value to the desired color */
+      );
+      --colorBackground: {{ settings.colorBackground }}; /* Change the color value to the desired color */
     }
   </style>
 
-  <body class="overflow-x-hidden min-h-screen font-source-sans-pro">
+  <body
+    class="overflow-x-hidden min-h-screen font-source-sans-pro bg-background"
+  >
     {% include "partials/_nav.njk" %}
     {{ content | safe }}
     {% include "partials/_footer.njk" %}
-    <div class="fixed bottom-0 pt-6 bg-white z-10 w-screen"></div>
+    <div class="fixed bottom-0 pt-6 bg-background z-10 w-screen"></div>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"

@@ -1012,7 +1012,7 @@
   
     .white-bg.is-open {
       transform: translateX(0%);
-      background: white;
+      background: var(--colorBackground);
       transition: transform 0.3s ease-out;
     }
   
