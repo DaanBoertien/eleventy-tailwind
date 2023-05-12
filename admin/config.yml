@@ -165,3 +165,6 @@ collections:
           - label: "Primary Color"
             name: "colorPrimary"
             widget: "color"
+          - label: "Secondary Color"
+            name: "colorSecondary"
+            widget: "color"
