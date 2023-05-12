@@ -2,8 +2,8 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 const yaml = require('js-yaml');
 const fs = require('fs');
 
-const colorsYaml = fs.readFileSync('./_data/colors.yml', 'utf8');
-const colors = yaml.load(colorsYaml);
+const settingsYaml = fs.readFileSync('./_data/settings.yml', 'utf8');
+const settings = yaml.load(settingsYaml);
 
 module.exports = {
   content: ['./_site/**/*.{html,njk}'],
@@ -14,7 +14,7 @@ module.exports = {
         ...defaultTheme.screens,
       },
       colors: {
-        primary: colors.primary,
+        primary: settings.colorPrimary,
       },
       fontFamily: {
         'source-sans-pro': ['Source Sans Pro', 'sans-serif'],
