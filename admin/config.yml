@@ -12,6 +12,9 @@ collections:
         label: "Home Page"
         name: "home"
         fields:
+          - label: "Background image"
+            name: backgroundImage
+            widget: "image"
           - label: "Name"
             name: "name"
             widget: "string"
