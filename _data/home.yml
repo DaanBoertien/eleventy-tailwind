@@ -1,8 +1,14 @@
-name: Marlen Korf
-instrumentLangPrimary: Sopran
-instrumentLangSecondary: Soprano
-quoteLangPrimary: “So sang Marlen Korf mit ausgesprochen schöner Stimme,
+instrument-lang-primary: Sopran
+quote-lang-secondary: “So sang Marlen Korf mit ausgesprochen schöner Stimme,
   tiefer Innerlichkeit und leuchtendem Klang.”
 quoteLangSecondary: “So Marlen Korf sang with an exceptionally beautiful voice
   and deep inwardness and bright sound.”
-backgroundImage: "/assets/img/marlen-home.jpg"
+backgroundImage: /assets/img/uploads/marlen-feet.jpg
+name: Marlen Korf
+instrumentLangPrimary: Sopran
+quote-lang-primary: “So sang Marlen Korf mit ausgesprochen schöner Stimme,
+  tiefer Innerlichkeit und leuchtendem Klang.”
+quoteLangPrimary: “So sang Marlen Korf mit ausgesprochen schöner Stimme, tiefer
+  Innerlichkeit und leuchtendem Klang.”
+instrument-lang-secondary: Soprano
+instrumentLangSecondary: Soprano
