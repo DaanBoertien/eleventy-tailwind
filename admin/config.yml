@@ -34,6 +34,9 @@ collections:
         label: "Biography"
         name: "bio"
         fields:
+          - label: "Background image"
+            name: backgroundImage
+            widget: "image"
           - label: "Title (Primary Language)"
             name: "titleLangPrimary"
             widget: "string"
@@ -50,8 +53,14 @@ collections:
         label: "Calendar"
         name: "calendar"
         fields:
+          - label: "Background image"
+            name: backgroundImage
+            widget: "image"
+          - label: "Quote (Primary Language)"
+            name: "quoteLangPrimary"
+            widget: "text"
           - label: "Quote (Secondary Language)"
-            name: "quote-lang-secondary"
+            name: "quoteLangSecondary"
             widget: "text"
           - label: "Concerts (Primary Language)"
             name: "concertsLangPrimary"
@@ -86,6 +95,9 @@ collections:
         name: "Contact"
         label: "Contact Information"
         fields:
+          - label: "Background image"
+            name: backgroundImage
+            widget: "image"
           - label: "Title (Primary Language)"
             name: "titlePrimaryLanguage"
             widget: "string"
