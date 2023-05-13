@@ -10,9 +10,7 @@
     <h1
       class="text-center text-white uppercase text-3xl font-light tracking-wider"
     >
-      {%if lang == 'primary'%}{{ calendar.concertsLangPrimary }}{%else%}{{
-        calendar.concertsLangSecondary
-      }}{%endif%}
+      {{ calendar | i18n('concerts', lang) }}
     </h1>
   </div>
   {% for concert in collections.concerts | futureConcerts%}
@@ -20,9 +18,7 @@
     class="grid max-w-full columns-1 place-items-center gap-2 py-8 shadow-xl filter backdrop-blur-lg xs:m-6 xs:mt-3 xs:bg-background/80 xs:px-3 xs:pb-8 md:m-6 md:w-2/3 md:bg-background/70 md:px-8 lg:w-1/2"
   >
     <p class="uppercase">
-      {%if lang == 'primary'%}{{ concert.data.cityLangPrimary }}{%else%}{{
-        concert.data.cityLangSecondary
-      }}{%endif%}
+      {{ concert.data | i18n('city', lang) }}
     </p>
     <p class="text-xl">
       {%if lang == 'primary'%} {% if concert.data.time %}
@@ -38,27 +34,23 @@
       {% endif %}{% endif %}
     </p>
     <p class="mb-3 uppercase">
-      {%if lang == 'primary'%}{{ concert.data.hallLangPrimary }}{%else%}{{
-        concert.data.hallLangSecondary
-      }}{%endif%}
+      {{ concert.data | i18n('city', lang) }}
     </p>
     <p class="mb-3 text-center text-xl">
-      {%if lang == 'primary'%}{{ concert.data.programLangPrimary }}{%else%}{{
-        concert.data.programLangSecondary
-      }}{%endif%}
+      {{ concert.data | i18n('program', lang) }}
     </p>
     <div class="mb-4 text-center">
-      {%if lang == 'primary'%}{{
-        concert.data.musiciansLangPrimary | md | safe
-      }}{%else%} {{ concert.data.musiciansLangSecondary | md | safe }}{%endif%}
+      {{concert.data | i18n('musicians', lang) | md | safe }}
     </div>
+    {% if concert.data.link and concert.data.link != '' %}
     <button
       class="bg-primary px-4 py-2 uppercase tracking-wide text-white transition-colors hover:bg-primary/70"
     >
-      <a target="_blank" href="https://www.st-michaelis.de/" class=""
+      <a target="_blank" href="{{ concert.data.link }}" class=""
         >Tickets & Info</a
       >
     </button>
+    {% endif %}
   </div>
   {% endfor %}
 
@@ -68,9 +60,7 @@
     <h1
       class="text-center text-white uppercase text-3xl font-light tracking-wider"
     >
-      {%if lang == 'primary'%}{{ calendar.archiveLangPrimary }}{%else%}{{
-        calendar.archiveLangSecondary
-      }}{%endif%}
+      {{ calendar | i18n('archive', lang) }}
     </h1>
   </div>
 
@@ -114,13 +104,15 @@
         concert.data.musiciansLangPrimary | md | safe
       }}{%else%}{{ concert.data.musiciansLangSecondary | md | safe }}{%endif%}
     </div>
+    {% if concert.data.link and concert.data.link != '' %}
     <button
       class="bg-primary px-4 py-2 uppercase tracking-wide text-white transition-colors hover:bg-primary/70"
     >
-      <a target="_blank" href="https://www.st-michaelis.de/" class=""
+      <a target="_blank" href="{{ concert.data.link }}" class=""
         >Tickets & Info</a
       >
     </button>
+    {% endif %}
   </div>
   {% endfor %}
 </div>

@@ -6,6 +6,11 @@ const { de } = require('date-fns/locale');
 const { en } = require('date-fns/locale');
 const markdownIt = require("markdown-it");
 
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+
 
 
 module.exports = function(eleventyConfig) {
@@ -17,7 +22,11 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("admin");
     eleventyConfig.addDataExtension("yml", contents => yaml.load(contents));
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
-  
+    eleventyConfig.addFilter('i18n', (object, key, lang) => {
+      const keyLang = `${key}Lang${capitalizeFirstLetter(lang)}`;
+      return object[keyLang];
+    });
+    
     const md = markdownIt({
         html: true,
         breaks: true,
@@ -27,8 +36,8 @@ module.exports = function(eleventyConfig) {
         return md.render(content);
       });
     
-      eleventyConfig.setLibrary("md", md);
-
+    eleventyConfig.setLibrary("md", md);
+    
     eleventyConfig.addFilter("concertDate", (dateObj) => {
         return DateTime.fromJSDate(dateObj).setLocale('de').toLocaleString(DateTime.DATE_FULL);
     });

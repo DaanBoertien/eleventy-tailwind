@@ -11,11 +11,7 @@
       {{ home.name }}
     </p>
     <div class="self-start font-extralight uppercase drop-shadow">
-      {%if lang == 'primary'%}
-      <p class="editable">{{ home.instrumentLangPrimary }}</p>
-      {%else%}
-      <p class="editable">{{ home.instrumentLangSecondary }}</p>
-      {%endif%}
+      {{ home | i18n('instrument', lang) }}
     </div>
   </div>
 </div>
@@ -24,14 +20,6 @@
   <div
     class="mt-10 mb-10 ml-6 mr-6 max-w-xl text-center font-average text-2xl text-slate-500"
   >
-    {%if lang == 'primary'%}
-    <p class="editable">
-      {{ home.quoteLangPrimary }}
-    </p>
-    {%else%}
-    <p class="editable">
-      {{ home.quoteLangPrimary }}
-    </p>
-    {%endif%}
+    {{ home | i18n('quote', lang) }}
   </div>
 </div>

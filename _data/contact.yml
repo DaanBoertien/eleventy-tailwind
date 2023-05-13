@@ -1,10 +1,10 @@
-titlePrimaryLanguage: Kontakt
-titleSecondaryLanguage: Contact
+titleLangPrimary: Kontakt
+titleLangSecondary: Contact
 
 email: mail@marlenkorf.com
 
-photographersPrimaryLanguage: Fotografen
-photographersSecondaryLanguage: Photographers
+photographersLangPrimary: Fotografen
+photographersLangSecondary: Photographers
 photographers:
   - name: Friederike Johanna Reeb
   - name: Julia Löwe

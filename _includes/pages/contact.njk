@@ -5,9 +5,9 @@
   <div
     class="place-items-start py-8 shadow-xl backdrop-blur-lg xs:mx-6 xs:mt-28 xs:bg-background/90 xs:px-3 xs:pb-12 md:m-6 md:w-1/2 md:bg-background/80 md:mt-10 md:px-8 lg:w-1/3"
   >
-    <h1 class="self-end text-3xl text-primary font-light">{%if lang == 'primary'%}{{
-      contact.titlePrimaryLanguage
-    }}{%else%}{{ contact.titleSecondaryLanguage }}{%endif%}</h1>
+    <h1 class="self-end text-3xl text-primary font-light">      
+      {{ contact | i18n('title', lang) }}
+    </h1>
    
 
     <p class="mb-6">
