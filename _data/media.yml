@@ -14,3 +14,10 @@ images:
   - src: /assets/img/uploads/marlen-black-white.jpg
     photographer: John Doe
     alt: Marlen in black and white
+videos:
+  - youTubeID: UBOj6rqRUME
+    title: Tailwind CSS1
+  - youTubeID: UBOj6rqRUME
+    title: Tailwind CSS2
+  - youTubeID: UBOj6rqRUME
+    title: Tailwind CSS3

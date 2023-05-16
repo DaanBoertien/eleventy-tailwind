@@ -33,17 +33,18 @@
       </div>
     </div>
     <h1 class="self-end text-3xl text-primary font-light mt-10 mb-6">Videos</h1>
-
+    {% for video in media.videos %}
     <div
-      class="relative h-0 overflow-hidden max-w-full w-full"
+      class="relative h-0 overflow-hidden max-w-full w-full mb-6"
       style="padding-bottom: 56.25%"
     >
       <iframe
-        src="https://www.youtube.com/embed/UBOj6rqRUME"
+        src="https://www.youtube.com/embed/{{ video.youTubeID }}"
         frameborder="0"
         allowfullscreen
         class="absolute top-0 left-0 w-full h-full"
       ></iframe>
     </div>
+    {% endfor %}
   </div>
 </div>
