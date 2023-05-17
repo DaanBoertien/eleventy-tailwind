@@ -9,6 +9,7 @@ module.exports = {
   content: ['./_site/**/*.{html,njk}'],
   theme: {
     extend: {
+      aspectRatio: ['responsive'],
       screens: {
         xs: '320px',
         ...defaultTheme.screens,
@@ -24,5 +25,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [require('@tailwindcss/typography') ,require('@tailwindcss/aspect-ratio'),],
 };

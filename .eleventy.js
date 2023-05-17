@@ -55,6 +55,18 @@ module.exports = function(eleventyConfig) {
             return concertDateTime >= now;
         });
     });
+    eleventyConfig.addFilter("nextConcert", (concerts) => {
+      const now = DateTime.local();
+      const futureConcerts = concerts.filter(concert => {
+          const concertDateTime = DateTime.fromJSDate(concert.date);
+          return concertDateTime >= now;
+      });
+      // Sort the future concerts by date
+      futureConcerts.sort((a, b) => a.date - b.date);
+      // Return only the first concert (i.e., the next upcoming one)
+      return futureConcerts[0];
+  });
+  
     eleventyConfig.addFilter("pastConcerts", (concerts) => {
         const now = DateTime.local();
         return concerts

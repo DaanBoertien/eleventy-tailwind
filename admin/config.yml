@@ -30,6 +30,33 @@ collections:
           - label: "Quote (Secondary Language)"
             name: "quoteLangSecondary"
             widget: "text"
+          - label: "YouTube ID"
+            name: "youTubeID"
+            widget: "string"
+            required: false
+          - label: "Show Next Concert"
+            name: "showNextConcert"
+            widget: "boolean"
+            default: true
+          - label: "Next Concert Title (Primary Language)"
+            name: "nextConcertLangPrimary"
+            widget: "string"
+          - label: "Next Concert Title (Secondary Language)"
+            name: "nextConcertLangSecondary"
+            widget: "string"
+          - label: "Show Introduction"
+            name: "showIntroduction"
+            widget: "boolean"
+            default: true
+          - label: "Introduction Text (Primary Language)"
+            name: "introductionLangPrimary"
+            widget: "text"
+            required: false
+          - label: "Introduction Text (Secondary Language)"
+            name: "introductionLangSecondary"
+            widget: "text"
+            required: false
+
       - file: "_data/bio.yml"
         label: "Biography"
         name: "bio"
