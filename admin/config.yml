@@ -92,7 +92,7 @@ collections:
             summary: "{{fields.title}}"
             fields:
               - label: "Title"
-                name: "Video Title"
+                name: "title"
                 widget: "string"
               - label: "YouTube ID"
                 name: "youTubeID"
