@@ -1,0 +1,19 @@
+<!-- Section 1: Hero with Name and Instrument and Background Image -->
+<div
+  class="relative h-screen pt-32 bg-cover bg-center bg-[url({{
+    home.backgroundImage
+  }})]"
+>
+  <div
+    class="absolute inset-0 bg-gradient-to-b from-transparent to-background"
+  ></div>
+  <!-- Add a gradient for better text visibility -->
+  <div
+    class="relative z-10 flex flex-col items-center justify-center h-full text-4xl text-primary space-y-4"
+  >
+    <p class="font-extralight uppercase">{{ home.name }}</p>
+    <div class="font-extralight uppercase">
+      {{ home | i18n('instrument', lang) }}
+    </div>
+  </div>
+</div>

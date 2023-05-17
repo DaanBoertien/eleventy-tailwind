@@ -34,7 +34,7 @@
   </div>
 
   {% set nextConcert = collections.concerts | nextConcert %} {% if nextConcert
-  %}
+  and home.showNextConcert %}
   <h2 class="text-3xl text-primary font-light text-center">
     {{ home | i18n('nextConcert', lang) }}
   </h2>
@@ -77,8 +77,7 @@
       </button>
       {% endif %}
     </div>
-    {% else %}
-    <p>No upcoming concerts.</p>
+
     {% endif %}
   </div>
 </div>
