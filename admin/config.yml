@@ -221,7 +221,7 @@ collections:
             widget: "color"
       - name: "template"
         label: "Templates"
-        file: "_data/settings.yml"
+        file: "_data/template.yml"
         fields:
           - label: "Template"
             name: "template"
