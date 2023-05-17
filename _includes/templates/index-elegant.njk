@@ -1,0 +1,83 @@
+<div
+  data-speed="-.4"
+  class="parallax ml-6 mr-6 grid min-h-screen place-items-center bg-[url({{
+    home.backgroundImage
+  }})] bg-cover bg-right-top"
+>
+  <div
+    class="grid columns-1 place-items-center gap-2 py-8 px-8 text-3xl tracking-wide text-cyan-800 shadow-xl backdrop-blur-md xs:translate-y-20 xs:bg-background/60 md:translate-y-0 md:bg-background/50 md:text-4xl"
+  >
+    <p class="editable self-end font-extralight uppercase drop-shadow">
+      {{ home.name }}
+    </p>
+    <div class="self-start font-extralight uppercase drop-shadow">
+      {{ home | i18n('instrument', lang) }}
+    </div>
+  </div>
+</div>
+
+<div class="parallax grid place-items-center bg-background">
+  <div
+    class="mt-10 mb-10 ml-6 mr-6 max-w-xl text-center font-average text-2xl text-slate-500"
+  >
+    {{ home | i18n('quote', lang) }}
+  </div>
+</div>
+<div class="max-w-3xl mx-auto mb-10">
+  <div class="aspect-w-16 aspect-h-9 overflow-hidden mb-10">
+    <iframe
+      src="https://www.youtube.com/embed/{{ home.youTubeID }}"
+      frameborder="0"
+      allowfullscreen
+      class="absolute top-0 left-0 w-full h-full"
+    ></iframe>
+  </div>
+
+  {% set nextConcert = collections.concerts | nextConcert %} {% if nextConcert
+  and home.showNextConcert %}
+  <h2 class="text-3xl text-primary font-light text-center">
+    {{ home | i18n('nextConcert', lang) }}
+  </h2>
+  <div class="flex flex-col items-center justify-center">
+    <div
+      class="grid max-w-full columns-1 place-items-center gap-2 py-8 shadow-xl filter backdrop-blur-lg xs:m-6 xs:mt-3 xs:bg-secondary/5 xs:px-3 xs:pb-8 md:m-6 md:w-2/3 md:px-8 lg:w-1/2"
+    >
+      <p class="uppercase">
+        {{ nextConcert.data | i18n('city', lang) }}
+      </p>
+      <p class="text-xl">
+        {%if lang == 'primary'%} {% if nextConcert.data.time %}
+        {{ nextConcert.data.date | date("d. MMMM yyyy", "de") }},
+        {{ nextConcert.data.time }}
+        {% else %}
+        {{ nextConcert.data.date | date("d. MMMM yyyy", "de") }}
+        {% endif %}{%else%} {% if nextConcert.data.time %}
+        {{ nextConcert.data.date | date("d MMMM yyyy", "en") }},
+        {{ nextConcert.data.time }}
+        {% else %}
+        {{ nextConcert.data.date | date("d MMMM yyyy", "en") }}
+        {% endif %}{% endif %}
+      </p>
+      <p class="mb-3 uppercase">
+        {{ nextConcert.data | i18n('city', lang) }}
+      </p>
+      <p class="mb-3 text-center text-xl">
+        {{ nextConcert.data | i18n('program', lang) }}
+      </p>
+      <div class="mb-4 text-center">
+        {{nextConcert.data | i18n('musicians', lang) | md | safe }}
+      </div>
+      {% if nextConcert.data.link and nextConcert.data.link != '' %}
+      <button
+        class="bg-primary px-4 py-2 uppercase tracking-wide text-white transition-colors hover:bg-primary/70"
+      >
+        <a target="_blank" href="{{ nextConcert.data.link }}" class=""
+          >Tickets & Info</a
+        >
+      </button>
+      {% endif %}
+    </div>
+
+    {% endif %}
+  </div>
+</div>

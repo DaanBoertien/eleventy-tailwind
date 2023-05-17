@@ -219,3 +219,14 @@ collections:
           - label: "Background Color"
             name: "colorBackground"
             widget: "color"
+      - name: "template"
+        label: "Templates"
+        file: "_data/settings.yml"
+        fields:
+          - label: "Template"
+            name: "template"
+            widget: "select"
+            options:
+              - "elegant"
+              - "simple"
+            default: "elegant"
