@@ -1,9 +1,8 @@
 ---
 tags: concerts
-title: Konzert im Michael
 cityLangPrimary: Hamburg
-cityLangSecondary: Hamburg
-date: 2023-02-08T01:00:00+01:00
+cityLangSecondary: St. Michaelis
+date: 2022-12-08T15:00:00+01:00
 hallLangPrimary: St. Michaelis
 hallLangSecondary: St. Michaelis
 programLangPrimary: Lieder von Wolf, Reger u.a. zum Advent
@@ -16,5 +15,6 @@ musiciansLangSecondary: |-
   Marlen Korf, Soprano
 
   Antonio Di Dedda, Piano
+title: Konzert im Michael
 link: https://www.st-michaelis.de/
 ---
