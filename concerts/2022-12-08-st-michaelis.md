@@ -1,22 +1,28 @@
 ---
 tags: concerts
-title: "first concert"
-cityLangPrimary: Hamburg
-cityLangSecondary: Hamburg
-date: 2022-12-08
-hallLangPrimary: St. Michaelis
-hallLangSecondary: St. Michaelis
-programLangPrimary: "Lieder von Wolf, Reger u.a. zum Advent"
-programLangSecondary: Songs by Wolf, Reger a.o. for Advent
-musiciansLangPrimary: >-
+cityLangPrimary: Zeist
+cityLangSecondary: Zeist
+date: 2023-03-17T20:15:00+01:00
+hallLangPrimary: Torenlaan Theater
+hallLangSecondary: Torenlaan Theater
+programLangPrimary: Schubertiade
+programLangSecondary: Schubertiade
+musiciansLangPrimary: |-
   Marlen Korf, Sopran
 
+  Berend Eijkhout, Bariton
 
-  Antonio Di Dedda, Klavier
-musiciansLangSecondary: >-
-  Marlen Korf, Soprano
+  Flo de Goede, Illustrator
 
+  Daan Boertien, Klavier
+musiciansLangSecondary: |-
+  Marlen Korf, Sopran
 
-  Antonio Di Dedda, Piano
-link: https://www.michaelis.de
+  Berend Eijkhout, Bariton
+
+  Flo de Goede, Illustrator
+
+  Daan Boertien, Klavier
+title: first concert
+link: https://www.torenlaantheater.nl/
 ---
