@@ -11,12 +11,12 @@ programLangSecondary: G. F. Händel »The Messiah«
 musiciansLangPrimary: |-
   Marlen Korf, Sopran
   Mirko Ludwig, Tenor
-  NN, Alt
-  NN, Bass
+  Sönke Tams Freier, Bass
+  Nina Nöske, Alt
 musiciansLangSecondary: |-
   Marlen Korf, Sopran
   Mirko Ludwig, Tenor
-  NN, Alt
-  NN, Bass
+  Sönke Tams Freier, Bass
+  Nina Nöske, Alt
 link: https://www.kirche-beverstedt.de/
 ---
