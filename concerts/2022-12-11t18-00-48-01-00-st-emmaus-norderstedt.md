@@ -14,13 +14,13 @@ programLangSecondary: |+
 
 musiciansLangPrimary: |-
   Marlen Korf, Sopran
-  Anna Lisa Beghardt, Alt
+  Anna Lisa Gebhardt, Alt
   Wolfgang Klose, Tenor
   Julian Redlin, Bass
   Leitung: Paul Fasang
 musiciansLangSecondary: |-
   Marlen Korf, Sopran
-  Anna Lisa Beghardt, Alt
+  Anna Lisa Gebhardt, Alt
   Wolfgang Klose, Tenor
   Julian Redlin, Bass
   Leitung: Paul Fasang
