@@ -14,4 +14,25 @@ images:
   - src: /assets/img/uploads/marlen-black-white.jpg
     photographer: John Doe
     alt: Marlen in black and white
+  - src: /assets/img/uploads/alcina.jpeg
+    photographer: Tillmann Engel
+    alt: Morgana, Alcina
+  - src: /assets/img/uploads/marlen-daan-1-.jpg
+    photographer: NN
+    alt: NN
+  - src: /assets/img/uploads/marlen-2-1-.jpg
+    photographer: NN
+    alt: NN
+  - src: /assets/img/uploads/katerina-paulpape17-1-.jpg
+    photographer: Paul Pape
+    alt: Katerina
+  - src: /assets/img/uploads/katerina-paulpape14-1-.jpg
+    photographer: Paul Pape
+    alt: Katerina
+  - src: /assets/img/uploads/katerina-paulpape13-1-.jpg
+    photographer: Paul Pape
+    alt: Katerina
+  - src: /assets/img/uploads/katerina-paulpape11-1-.jpg
+    photographer: Paul Pape
+    alt: Katerina
 videos: []
