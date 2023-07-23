@@ -1,20 +1,25 @@
 ---
 tags: concerts
-title: hoi
 cityLangPrimary: Hamburg
 cityLangSecondary: Hamburg
-date: 2023-03-17
-hallLangPrimary: Elbphilharmonie
-hallLangSecondary: Elbphilharmonie
-programLangPrimary: Lieder von Wolf, Reger u.a. zum Advent
-programLangSecondary: Songs by Wolf, Reger a.o. for Advent
+date: 2023-01-01T18:00:00+01:00
+hallLangPrimary: St. Michaelis
+hallLangSecondary: St. Michaelis
+programLangPrimary: |
+  J.S. Bach »Weihnachtsoratorium« Kanate IV
+programLangSecondary: J.S. Bach »Weihnachtsoratorium« Kanate IV
 musiciansLangPrimary: |-
   Marlen Korf, Sopran
+  Mirko Ludwig, Tenor
+  David Cismar, Bass
 
-  Antonio Di Dedda, Klavier
+  Leitung: Jörg Endebrock
 musiciansLangSecondary: |-
-  Marlen Korf, Soprano
+  Marlen Korf, Sopran
+  Mirko Ludwig, Tenor
+  David Cismar, Bass
 
-  Antonio Di Dedda, Piano
+  Leitung: Jörg Endebrock
+title: hoi
 link: https://www.st-michaelis.de/
 ---
