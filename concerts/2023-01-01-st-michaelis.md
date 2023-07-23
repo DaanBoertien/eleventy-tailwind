@@ -1,7 +1,7 @@
 ---
 tags: concerts
 cityLangPrimary: Hamburg
-cityLangSecondary: St. Michaelis
+cityLangSecondary: Hamburg
 date: 2022-12-08T15:00:00+01:00
 hallLangPrimary: St. Michaelis
 hallLangSecondary: St. Michaelis
