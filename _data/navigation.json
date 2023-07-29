@@ -17,12 +17,20 @@
             "urlActive": "bio-active"
           },
           {
-            "nameLangPrimary": "Agenda",
+            "nameLangPrimary": "Termine",
             "nameLangSecondary": "Schedule",
             "urlLangPrimary": "/termine/",
             "urlLangSecondary": "/en/schedule/",
             "urlClass": "/concerts.html",
             "urlActive": "calendar-active"
+          },
+          {
+            "nameLangPrimary": "Repertoire",
+            "nameLangSecondary": "Repertoire",
+            "urlLangPrimary": "/repertoire/",
+            "urlLangSecondary": "/en/repertoire/",
+            "urlClass": "/repertoire.html",
+            "urlActive": "repertoire-active"
           },
           {
             "nameLangPrimary": "Medien",

@@ -15,26 +15,26 @@
   </div>
   {% for concert in collections.concerts | futureConcerts%}
   <div
-    class="grid max-w-full columns-1 place-items-center gap-2 py-8 shadow-xl filter backdrop-blur-lg xs:m-6 xs:mt-3 xs:bg-background/80 xs:px-3 xs:pb-8 md:m-6 md:w-2/3 md:bg-background/70 md:px-8 lg:w-1/2"
+    class="grid max-w-full columns-1 place-items-center gap-2 text-secondary/70 py-8 shadow-xl filter backdrop-blur-lg xs:m-6 xs:mt-3 xs:bg-background/80 xs:px-3 xs:pb-8 md:m-6 md:w-2/3 md:bg-background/70 md:px-8 lg:w-1/2"
   >
     <p class="uppercase">
       {{ concert.data | i18n('city', lang) }}
     </p>
     <p class="text-xl">
       {%if lang == 'primary'%} {% if concert.data.time %}
-      {{ concert.data.date | date("d. MMMM yyyy", "de") }},
+      {{ concert.data.date | date("d. MMMM yyyy, HH:mm", "de") }},
       {{ concert.data.time }}
       {% else %}
-      {{ concert.data.date | date("d. MMMM yyyy", "de") }}
+      {{ concert.data.date | date("d. MMMM yyyy, HH:mm", "de") }}
       {% endif %}{%else%} {% if concert.data.time %}
-      {{ concert.data.date | date("d MMMM yyyy", "en") }},
+      {{ concert.data.date | date("d. MMMM yyyy, HH:mm", "en") }},
       {{ concert.data.time }}
       {% else %}
-      {{ concert.data.date | date("d MMMM yyyy", "en") }}
+      {{ concert.data.date | date("d. MMMM yyyy, HH:mm", "en") }}
       {% endif %}{% endif %}
     </p>
     <p class="mb-3 uppercase">
-      {{ concert.data | i18n('city', lang) }}
+      {{ concert.data | i18n('hall', lang) }}
     </p>
     <p class="mb-3 text-center text-xl">
       {{ concert.data | i18n('program', lang) }}
@@ -66,7 +66,7 @@
 
   {% for concert in collections.concerts | pastConcerts %}
   <div
-    class="grid max-w-full columns-1 place-items-center gap-2 py-8 shadow-xl filter backdrop-blur-lg xs:m-6 xs:mt-3 xs:bg-background/80 xs:px-3 xs:pb-12 md:m-6 md:w-2/3 md:bg-background/70 md:px-8 lg:w-1/2"
+    class="grid max-w-full columns-1 place-items-center gap-2 py-8 text-secondary/70 shadow-xl filter backdrop-blur-lg xs:m-6 xs:mt-3 xs:bg-background/80 xs:px-3 xs:pb-12 md:m-6 md:w-2/3 md:bg-background/70 md:px-8 lg:w-1/2"
   >
     <p class="uppercase">
       {%if lang == 'primary'%}{{ concert.data.cityLangPrimary }}{%else%}{{

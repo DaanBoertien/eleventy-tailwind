@@ -11,7 +11,8 @@ photographers:
   - name: Christian Engert (Grisette)
   - name: Tillmann Engel
   - name: Stuart Ackerholt
-  - name: Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die
+  - name:
+      Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die
       Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch
       keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG
       für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen
@@ -24,5 +25,7 @@ photographers:
       der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden
       von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend
       entfernen.
+extraLangPrimary: Extra Tekst
+extraLangSecondary: Extra Text
 webDesign: Web Design
 webDesigner: Daan Boertien

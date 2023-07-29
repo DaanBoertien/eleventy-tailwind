@@ -2,6 +2,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 const yaml = require('js-yaml');
 const fs = require('fs');
 
+
 const settingsYaml = fs.readFileSync('./_data/settings.yml', 'utf8');
 const settings = yaml.load(settingsYaml);
 

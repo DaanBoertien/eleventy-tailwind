@@ -36,7 +36,12 @@ module.exports = function(eleventyConfig) {
         return md.render(content);
       });
     
+    
     eleventyConfig.setLibrary("md", md);
+
+    eleventyConfig.addFilter('markdownify', function(value) {
+      return md.render(value);
+    });
     
     eleventyConfig.addFilter("concertDate", (dateObj) => {
         return DateTime.fromJSDate(dateObj).setLocale('de').toLocaleString(DateTime.DATE_FULL);

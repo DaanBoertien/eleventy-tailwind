@@ -8,11 +8,11 @@
     class="grid w-auto columns-1 place-items-start gap-2 py-8 shadow-xl backdrop-blur-lg xs:m-3 xs:mt-32 xs:bg-background/90 xs:px-3 xs:pb-12 md:mt-32 md:m-6 md:w-2/3 md:bg-background/90 md:px-8 lg:w-1/2"
   >
     <h1 class="self-end text-3xl text-primary font-light">
-      {{ bio | i18n('title', lang) | markdownify | safe }}
+      {{ repertoire | i18n('title', lang) | markdownify | safe }}
     </h1>
 
     <div class="self-start text-lg font-light xs:text-sm md:text-lg prose">
-      {{ bio | i18n('bio', lang) | markdownify | safe }}
+      {{ repertoire | i18n('repertoire', lang) | markdownify | safe }}
     </div>
   </div>
 </div>
