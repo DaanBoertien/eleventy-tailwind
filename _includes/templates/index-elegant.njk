@@ -24,6 +24,16 @@
   </div>
 </div>
 <div class="max-w-3xl mx-auto mb-10">
+  <!-- LightWidget WIDGET -->
+  <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+  <iframe
+    src="https://cdn.lightwidget.com/widgets/3f6e73ecc58e587f8b8a88baf1f7ea53.html"
+    scrolling="no"
+    allowtransparency="true"
+    class="lightwidget-widget mb-10"
+    style="width: 100%; border: 0; overflow: hidden"
+  ></iframe>
+  {% if home.youTubeID != "" %}
   <div class="aspect-w-16 aspect-h-9 overflow-hidden mb-10">
     <iframe
       src="https://www.youtube.com/embed/{{ home.youTubeID }}"
@@ -33,8 +43,8 @@
     ></iframe>
   </div>
 
-  {% set nextConcert = collections.concerts | nextConcert %} {% if nextConcert
-  and home.showNextConcert %}
+  {% endif %} {% set nextConcert = collections.concerts | nextConcert %} {% if
+  nextConcert and home.showNextConcert %}
   <h2 class="text-3xl text-primary font-light text-center">
     {{ home | i18n('nextConcert', lang) }}
   </h2>
