@@ -32,21 +32,9 @@ images:
   - src: /assets/img/uploads/katerina-paulpape13-1-.jpg
     photographer: Paul Pape
     alt: Katerina
-  - src: /assets/img/uploads/katerina-paulpape11-1-.jpg
-    photographer: Paul Pape
-    alt: Katerina
-  - src: /assets/img/uploads/katerina-paulpape39.1280x0.jpg
-    photographer: Paul Pape
-    alt: Katerina
-  - src: /assets/img/uploads/img-20200311-wa0001.1280x0.jpg
-    photographer: privat
-    alt: J. S. Bach Weihnachtsoratorium, Hamburger Laeiszhalle
   - src: /assets/img/uploads/25626954-1619868604715531-5508017600430414967-o.1280x0.jpg
     photographer: privat
     alt: J.S. Bach Weihnachtsoratorium Hamburger Laeiszhalle
-  - src: /assets/img/uploads/alfons-1.1280x0.jpg
-    photographer: Christian Engert
-    alt: F. Lehár, Die Lustige Witwe
   - src: /assets/img/uploads/lustige-witwe.1280x0.jpg
     photographer: Christian Engert
     alt: F. Lehár, Die Lustige Witwe
@@ -68,9 +56,6 @@ images:
     photographer: Stuart Ackerholt
     alt: Recital
   - src: /assets/img/uploads/marlen-2-1-.jpg
-    photographer: Stuart Ackerholt
-    alt: Recital
-  - src: /assets/img/uploads/marlen-1-1-.jpg
     photographer: Stuart Ackerholt
     alt: Recital
 videos: []
