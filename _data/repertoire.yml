@@ -1,32 +1,15 @@
 backgroundImage: /assets/img/uploads/marlen-mirror.jpg
 titleLangPrimary: Repertoire
 titleLangSecondary: Repertoire
-repertoireLangPrimary: >-
-  Die Sopranistin Marlen Korf ist Preisträgerin des Lotte Lehmann Förderpreises,
-  war Stipendiatin der Oscar und Vera Ritter- Stiftung sowie der Richard Wagner
-  Stipendienstiftung 2019 in Bayreuth.
-
-
-  Marlen Korf erhielt Ihre Gesangsausbildung bei Prof. Jörn Dopfer (HfMT Hamburg) sowie Margreet Honig (Amsterdam) und Prof. Marcel Boone. Weitere sängerische und musikalische Impulse bekam Sie durch Burkhard Kehring, Krisztina Laki und Sybilla Rubens. 
-
-
-  Marlen Korf geht einer regen Konzerttätigkeit nach und unterrichtet seit dem Wintersemester 2020 als Lehrbeauftragte an der HfMT Hamburg, und begleitet die jungen Talente des Hamburger Knabenchores St. Nikolai als auch die Kinder Solist:innen der Hamburgischen Staatsoper.
-
-
-  Zu hören war sie unter anderem mit dem Göttinger Barockorchester, den Hamburger Symphonikern, der Hamburger Camerata und dem Barockorchester elbipolis. Sie führte die großen Passionen und Oratorien Bachs, Mozarts Große Messe in c-Moll und Requiem, Mendelssohns Paulus, Brahms Ein deutsches Requiem, Händels Messiah, Camille Saint-Saëns Oratorio de Noël sowie Dvořáks Stabat Mater mit auf. Konzertreisen führten sie bereits nach Brasilien, Shanghai, Frankreich und in die Niederlande.
-
-
-  Sie arbeitete mit dem Bundesjugendballett John Neumeier zusammen. Auf der Opernbühne war die Darstellerin als Ninfa in Monteverdis Lamento della Ninfa, als Eurydike, Almira, Morgana, Second Witch und Second Woman (alles an der Opera Stabile der Hamburgischen Staatsoper), Sandmann sowie als Nymphe in der Uraufführung der Klangoper »Die kleine Meerjungfrau« am Theater Bremen zu erleben. In der Saison 2019 gestaltete sie die Partie der Katerina, der einzigen Darstellerin einer Installationsperformance mit gleichnamigem Titel, basierend auf der Oper Lady Macbeth von Schostakovitsch, im Theater im Pavillon in Hannover.
-repertoireLangSecondary: >-
-  Soprano Marlen Korf is winner of the the Lotte Lehmann Education prize,
-  and was a fellow of the Oscar und Vera Ritter Foundation and the Richard
-  Wagner Scholarship Foundation 2019 in Bayreuth.
-
-
-  Marlen Korf received her vocal training from Prof. Jörn Dopfer (HfMT Hamburg) as well as Margreet Honig (Amsterdam) and Prof. Marcel Boone. She received further impulses from Burkhard Kehring, Krisztina Laki and Sybilla Rubens.
-
-
-  Marlen Korf is an active concert singer and since the fall of 2020 she teaches as well at the HfMT Hamburg. She performed with the Göttinger Barockorchester, the Hamburg Symphony Orchestra, the Hamburg Camerata and the Barockorchester elbipolis. She performed Bach's Passions and Oratorios, Mozart's Great Mass in C minor and Requiem, Mendelssohn's Paulus, Brahms A German Requiem, Handel's Messiah, Camille Saint-Saëns Oratorio de Noël and Dvořák's Stabat Mater. Concert tours have already taken her to Brazil, Shanghai, France and the Netherlands.
-
-
-  She collaborated with the Bundesjugendballet John Neumeier. On the opera stage, Marlen was seen as Ninfa in Monteverdi's Lamento della Ninfa, as Eurydike, Almira, Morgana, Second Witch and Second Woman (all at the Opera Stabile of the Hamburger Staatsoper), Sandmann and as a nymph in the premiere of the opera »The Little Mermaid« at Theater Bremen. In the season 2019/2020 she performed the role of Katerina, the only performer in an installation performance with the same title, based on the opera Lady Macbeth by Schostakovitsch, in the theater in the pavilion in Hannover.
+repertoireLangPrimary: |
+  | Komponist    | Werk            |
+  |-------------|-------------------|
+  | J.S. Bach   | Matthaus Passion  |
+  |             | Johannes Passion  |
+  | W.A. Mozart | Requiem           |
+repertoireLangSecondary: |
+  | Composer    | Piece             |
+  |-------------|-------------------|
+  | J.S. Bach   | Matthaus Passion  |
+  |             | Johannes Passion  |
+  | W.A. Mozart | Requiem           |
