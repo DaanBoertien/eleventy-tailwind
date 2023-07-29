@@ -33,7 +33,7 @@
         {% endfor %}
       </div>
     </div>
-    {% endif %} {% if media.videos and media.videos.length > 0 %}
+    {% endif %} {# {% if media.videos and media.videos.length > 0 %}
     <h1 class="self-end text-3xl text-primary font-light mt-10 mb-6">Videos</h1>
     {% for video in media.videos %}
     <div
@@ -47,6 +47,6 @@
         class="absolute top-0 left-0 w-full h-full"
       ></iframe>
     </div>
-    {% endfor %} {% endif %}
+    {% endfor %} {% endif %} #}
   </div>
 </div>
