@@ -1,15 +1,15 @@
 backgroundImage: /assets/img/uploads/marlen-mirror.jpg
 titleLangPrimary: Repertoire
 titleLangSecondary: Repertoire
-repertoireLangPrimary: |
-  | Komponist    | Werk            |
-  |-------------|-------------------|
-  | J.S. Bach   | Matthaus Passion  |
-  |             | Johannes Passion  |
-  | W.A. Mozart | Requiem           |
-repertoireLangSecondary: |
-  | Composer    | Piece             |
-  |-------------|-------------------|
-  | J.S. Bach   | Matthaus Passion  |
-  |             | Johannes Passion  |
-  | W.A. Mozart | Requiem           |
+repertoireLangPrimary: |-
+  | **Komponist** | **Werk**         |
+  | ------------- | ---------------- |
+  | J.S. Bach     | Matthaus Passion |
+  |               | Johannes Passion |
+  | W.A. Mozart   | Requiem          |
+repertoireLangSecondary: |-
+  | **Composer** | **Piece**        |
+  | ------------ | ---------------- |
+  | J.S. Bach    | Matthaus Passion |
+  |              | Johannes Passion |
+  | W.A. Mozart  | Requiem          |
