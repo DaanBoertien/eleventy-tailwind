@@ -2,7 +2,7 @@ backgroundImage: /assets/img/uploads/marlen-mirror.jpg
 titleLangPrimary: Repertoire
 titleLangSecondary: Repertoire
 repertoireLangPrimary: |+
-  |﻿ ** Komponist **   ** Werk**      |
+  |﻿ ** Komponist **|   ** Werk**      |
   | ------------- | ---------------- |
   | J.S. Bach     | Weihnachtsoratorium, BWV 248 |
   |               | Magnificat, BWV 243 (1. und 2. Sopran)|
@@ -61,7 +61,7 @@ repertoireLangPrimary: |+
 
 
 repertoireLangSecondary: |
-  |﻿ ** Composer** | ** Piece **
+  |﻿ ** Composer** | ** Piece **      |
   | ------------  | ---------------- |
   | J.S. Bach     | Weihnachtsoratorium, BWV 248 |
   |               | Magnificat, BWV 243 (1. und 2. Sopran)|
