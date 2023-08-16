@@ -45,7 +45,7 @@
   </div>
 
   {% endif %} {% set nextConcert = collections.concerts | nextConcert %} {% if
-  nextConcert and home.showNextConcert %}
+  nextConcert and home.showNextConcert %} {#
   <h2 class="text-3xl text-primary font-light text-center">
     {{ home | i18n('nextConcert', lang) }}
   </h2>
@@ -86,7 +86,45 @@
           >Tickets & Info</a
         >
       </button>
-      {% endif %}
+      {% endif %} #}
+      <div
+        class="grid max-w-full columns-1 place-items-center gap-2 text-secondary/70 py-8 shadow-xl filter backdrop-blur-lg xs:m-6 xs:mt-3 xs:bg-background/80 xs:px-3 xs:pb-8 md:m-6 md:w-2/3 md:bg-background/70 md:px-8 lg:w-1/2"
+      >
+        <p class="uppercase">
+          {{ concert.data | i18n('city', lang) }}
+        </p>
+        <p class="text-xl">
+          {%if lang == 'primary'%} {% if concert.data.time %}
+          {{ concert.data.date | date("d. MMMM yyyy, HH:mm", "de") }},
+          {{ concert.data.time }}
+          {% else %}
+          {{ concert.data.date | date("d. MMMM yyyy, HH:mm", "de") }}
+          {% endif %}{%else%} {% if concert.data.time %}
+          {{ concert.data.date | date("d. MMMM yyyy, HH:mm", "en") }},
+          {{ concert.data.time }}
+          {% else %}
+          {{ concert.data.date | date("d. MMMM yyyy, HH:mm", "en") }}
+          {% endif %}{% endif %}
+        </p>
+        <p class="mb-3 uppercase">
+          {{ concert.data | i18n('hall', lang) }}
+        </p>
+        <p class="mb-3 text-center text-xl">
+          {{ concert.data | i18n('program', lang) }}
+        </p>
+        <div class="mb-4 text-center">
+          {{concert.data | i18n('musicians', lang) | md | safe }}
+        </div>
+        {% if concert.data.link and concert.data.link != '' %}
+        <button
+          class="bg-primary px-4 py-2 uppercase tracking-wide text-white transition-colors hover:bg-primary/70"
+        >
+          <a target="_blank" href="{{ concert.data.link }}" class=""
+            >Tickets & Info</a
+          >
+        </button>
+        {% endif %}
+      </div>
     </div>
 
     {% endif %}
