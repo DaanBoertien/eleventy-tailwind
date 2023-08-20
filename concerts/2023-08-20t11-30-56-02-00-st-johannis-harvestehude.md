@@ -3,7 +3,7 @@ tags:
   - concerts
 cityLangPrimary: Hamburg
 cityLangSecondary: Hamburg
-date: 2023-08-20T11:30:56+02:00
+date: 2023-08-20T13:30:56+02:00
 hallLangPrimary: St. Johannis Harvestehude
 hallLangSecondary: St. Johannis Harvestehude
 programLangPrimary: Musikalische Gestaltung Gottesdienst
