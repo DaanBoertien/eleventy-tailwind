@@ -3,7 +3,7 @@ tags:
   - concerts
 cityLangPrimary: Hamburg
 cityLangSecondary: Hamburg
-date: 2024-03-24T18:00:49+01:00
+date: 2024-03-24T20:00:49+01:00
 hallLangPrimary: CHRISTUSKIRCHE GARSTEDT
 hallLangSecondary: CHRISTUSKIRCHE GARSTEDT
 programLangPrimary: D. Buxtehude  »Membra Jesu Nostri«
