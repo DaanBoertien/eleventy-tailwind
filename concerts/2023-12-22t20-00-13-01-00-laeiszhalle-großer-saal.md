@@ -8,21 +8,29 @@ hallLangPrimary: Laeiszhalle, Großer Saal
 hallLangSecondary: Laeiszhalle, Main Hall
 programLangPrimary: |-
   J.S. Bach »Magnificat D-Dur«
-  J.S. Bach »Weihnachtsoratorium I-III«
+  J.S. Bach »Weihnachtsoratorium Kantate I«
 programLangSecondary: |-
   J.S. Bach »Magnificat D-Dur«
   J.S. Bach »Weihnachtsoratorium I-III«
 musiciansLangPrimary: |-
   Marlen Korf, Sopran
+  Matthias Dähling, Altus
+  Luiz de Melo, Tenor
+  Daniel Ochoa, Bass
+
   Solisten des Hamburger Knabenchores
 
   Philharmonisches Staatsorchester Hamburg
   Luiz De Godoy, Leitung
 musiciansLangSecondary: |-
   Marlen Korf, Sopran
+  Matthias Dähling, Altus
+  Luiz de Melo, Tenor
+  Daniel Ochoa, Bass
+
   Solisten des Hamburger Knabenchores
 
   Philharmonisches Staatsorchester Hamburg
   Luiz De Godoy, Leitung
-link: https://www.elbphilharmonie.de/de/laeiszhalle
+link: https://www.elbphilharmonie.de/de/programm/hamburger-knabenchor-philharmonisches-staatsorchester-hamburg/20919
 ---
