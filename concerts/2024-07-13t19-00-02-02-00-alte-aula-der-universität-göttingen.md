@@ -10,14 +10,16 @@ programLangPrimary: Joseph Haydn »Die Schöpfung« Hob. XXI:2
 programLangSecondary: Joseph Haydn »Die Schöpfung« Hob. XXI:2
 musiciansLangPrimary: |-
   Marlen Korf, Sopran
-  Weitere Solist:innen NN
+  Constantin Bauer, Tenor
+  Leon - Maurice Teichert, Bariton
 
   Hammerflügel, Glasharfe
   Universitätschor Göttingen
   Antonius Adamske, Leitung
 musiciansLangSecondary: |-
   Marlen Korf, Sopran
-  Weitere Solist:innen NN
+  Constantin Bauer, Tenor
+  Leon - Maurice Teichert, Bariton
 
   Hammerflügel, Glasharfe
   Universitätschor Göttingen
