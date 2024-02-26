@@ -11,17 +11,17 @@ programLangSecondary: D. Buxtehude  »Membra Jesu Nostri«
 musiciansLangPrimary: |-
   Marlen Korf, Sopran
   Lisa Schmalz, Sopran
-  NN, Alt
-  NN, Tenor
-  NN, Bass
+  Joel Vuik, Altus
+  Isaak Lee, Tenor
+  Sönke Tams Freier, Bass
 
   Paul Fasang, Leitung
 musiciansLangSecondary: |-
   Marlen Korf, Sopran
   Lisa Schmalz, Sopran
-  NN, Alt
-  NN, Tenor
-  NN, Bass
+  Joel Vuik, Altus
+  Isaak Lee, Tenor
+  Sönke Tams Freier, Bass
 
   Paul Fasang, Leitung
 link: https://www.kirche-hamburg.de/gemeinden/ev-luth-emmaus-kirchengemeinde-norderstedt.html
