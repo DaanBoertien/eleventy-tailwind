@@ -3,7 +3,7 @@ tags:
   - concerts
 cityLangPrimary: Hamburg
 cityLangSecondary: Hamburg
-date: 2024-02-24T20:00:22+01:00
+date: 2024-02-24T19:00:22+01:00
 hallLangPrimary: St. Johannis Eppendorf
 hallLangSecondary: St. Johannis Eppendorf
 programLangPrimary: Mozart »Requiem d-Moll KV 626«
