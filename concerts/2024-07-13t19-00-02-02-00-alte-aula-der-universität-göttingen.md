@@ -3,7 +3,7 @@ tags:
   - concerts
 cityLangPrimary: Göttingen
 cityLangSecondary: Göttingen
-date: 2024-07-13T21:00:02+02:00
+date: 2024-07-13T18:00:02+02:00
 hallLangPrimary: Alte Aula der Universität Göttingen
 hallLangSecondary: Alte Aula der Universität Göttingen
 programLangPrimary: Joseph Haydn »Die Schöpfung« Hob. XXI:2
