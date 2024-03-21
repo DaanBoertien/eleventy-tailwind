@@ -47,8 +47,9 @@ module.exports = function(eleventyConfig) {
         return DateTime.fromJSDate(dateObj).setLocale('de').toLocaleString(DateTime.DATE_FULL);
     });
     eleventyConfig.addFilter("concertTime", (dateObj) => {
-        return DateTime.fromJSDate(dateObj).setLocale('de').toLocaleString(DateTime.TIME_24_SIMPLE);
-    });
+      // Explicitly use the 'Europe/Amsterdam' time zone
+      return DateTime.fromJSDate(dateObj, {zone: 'Europe/Amsterdam'}).setLocale('de').toLocaleString(DateTime.TIME_24_SIMPLE);
+  });
     const now = new Date();
     eleventyConfig.addGlobalData("currentYear", now.getFullYear());
 
