@@ -13,7 +13,7 @@ repertoireLangPrimary: |-
   | ﻿ J. Brahms      | Ein deutsches Requiem, op. 45                    |
   | ﻿                                                              |   
   |﻿ D. Buxtehude    | Membra Jesu Nostri, BuxWV 75
-                      Herzlich lieb hab ich Dich, BuxWV 41
+  |                 | Herzlich lieb hab ich Dich, BuxWV 41             |
   |﻿                 |                                                  |
   | ﻿ A. Dvořák      | Messe in D Dur op. 86                            |
   |                 | Stabat Mater op.58                               |
@@ -28,7 +28,7 @@ repertoireLangPrimary: |-
   | ﻿                |                                                  |
   | ﻿ G.F. Händel    | Neun deutsche Arien, HWV 202–210                 |
   | ﻿                | The Messiah, HWV 56                              |
-  | ﻿                | Chandos Anthems, HWV 256
+  | ﻿                | Chandos Anthems, HWV 256                         |
   | ﻿                | Alexander's Feast, HWV 54                        |
   | ﻿ J. N. Hummel   | Der Durchzug durch das rote Meer                 |
   | ﻿                |                                                  |
@@ -63,60 +63,126 @@ repertoireLangPrimary: |-
   | ﻿                |                                                  |
   | ﻿ A. Vivaldi     | Gloria, RV 589 (1. und 2. Sopran)                |
   | ﻿                | Magnificat, RV 610 (1. und 2. Sopran)            |
-repertoireLangSecondary: |
-  |﻿               |                  | 
-  | ------------  | ---------------- |
-  | J.S. Bach     | Weihnachtsoratorium, BWV 248 |
-  |               | Magnificat, BWV 243 (1. und 2. Sopran)|
-  |﻿               | Matthäus-Passion, BWV 244 |
-  |               | Johannes-Passion, BWV 245 
-  |               | Diverse Kantaten, u.a. alle Sopran Solo Kantaten  
-  |﻿               |
-  |﻿ J. Brahms     | Ein deutsches Requiem, op. 45 |
-  |﻿ A. Dvořák     | Messe in D Dur op. 86 |
-  |               | Stabat Mater op.58 |
-  |﻿               | Biblische Lieder op.99 |
-  |﻿               |
-  |﻿ G. Fauré      | Requiem, op. 48 |
-  |﻿               |
-  |﻿ CH. Gounod    | Caecilienmesse |
-  |﻿ J. Haydn      | Die Schöpfung |
-  |﻿               | Die Jahreszeiten | 
-  |﻿               | Nelsonmesse |
-  |﻿               | 
-  |﻿ G.F. Händel   | Neun deutsche Arien, HWV 202–210 |
-  |﻿               | The Messiah, HWV 56 |
-  |﻿               | Alexander's Feast, HWV 54 |
-  |﻿ J. N. Hummel  | Der Durchzug durch das rote Meer |
-  |﻿               |
-  |﻿ F. Mendelssohn| Elias, op. 70 |
-  |﻿               | Lobgesang op. 52 |
-  |﻿               | Paulus op. 36 |
-  |﻿               | Psalm 42 Wie der Hirsch schreiet |
-  |﻿               | Hymne Hör mein Bitten |
-  |﻿               | Salve Regina |
-  |﻿               |
-  |﻿ W. A. MOZART  | Requiem, KV 626 |
-  |﻿               | Missa in c-Moll, KV 427 (1. und 2. Sopran) |
-  |﻿               | Missa in C, Krönungsmesse, KV 317 |
-  |﻿               | Vesperae solennes de Confessore, KV 339 |
-  |﻿               | Exsultate, jubilate, KV 165 (158a) |
-  |﻿               |
-  | R. Mauersberger | Passion nach dem Lukas-Evangelium (1947) RMWV 9 |
-  |﻿               |
-  |﻿ C. Orff       | Carmina Burana |
-  |﻿               | 
-  |﻿ F. Schubert   | Messe in As Dur |
-  |﻿               | Messe in Es Dur |
-  |﻿               | Messe in F Dur |
-  |﻿               |
-  |﻿ J. Rutter     | Requiem | 
-  |﻿               |
-  |﻿ G. Rheinberger | Der Stern von Bethlehem, op. 164 |
-  |﻿               |
-  |﻿ G. Rossini    | Petite Messe Solennelle |
-  |﻿               |
-  |﻿ C. Saint-Saëns| Oratorio de Noël, op. 12 |
-  |﻿               |
-  |﻿ A. Vivaldi    | Gloria, RV 589 (1. und 2. Sopran) |  
-  |﻿               | Magnificat, RV 610 (1. und 2. Sopran) |
+repertoireLangSecondary: >+
+  | ﻿                |                                                  |
+
+  | ---------------- | ------------------------------------------------ |
+
+  | J.S. Bach        | Weihnachtsoratorium, BWV 248                     |
+
+  |                  | Magnificat, BWV 243 (1. und 2. Sopran)           |
+
+  | ﻿                 | Matthäus-Passion, BWV 244                        |
+
+  |                  | Johannes-Passion, BWV 245                        |
+
+  |                  | Diverse Kantaten, u.a. alle Sopran Solo Kantaten |
+
+  | ﻿                |                                                  |
+
+  | ﻿ J. Brahms      | Ein deutsches Requiem, op. 45                    |
+
+  | ﻿                                                              |   
+
+  |﻿ D. Buxtehude    | Membra Jesu Nostri, BuxWV 75
+
+  |                 | Herzlich lieb hab ich Dich, BuxWV 41             |
+
+  |﻿                 |                                                  |
+
+  | ﻿ A. Dvořák      | Messe in D Dur op. 86                            |
+
+  |                 | Stabat Mater op.58                               |
+
+  | ﻿                | Biblische Lieder op.99                           |
+
+  | ﻿                |                                                  |
+
+  | ﻿ G. Fauré       | Requiem, op. 48                                  |
+
+  | ﻿                |                                                  |
+
+  | ﻿ CH. Gounod     | Caecilienmesse                                   |
+
+  | ﻿ J. Haydn       | Die Schöpfung                                    |
+
+  | ﻿                | Die Jahreszeiten                                 |
+
+  | ﻿                | Nelsonmesse                                      |
+
+  | ﻿                |                                                  |
+
+  | ﻿ G.F. Händel    | Neun deutsche Arien, HWV 202–210                 |
+
+  | ﻿                | The Messiah, HWV 56                              |
+
+  | ﻿                | Chandos Anthems, HWV 256                         |
+
+  | ﻿                | Alexander's Feast, HWV 54                        |
+
+  | ﻿ J. N. Hummel   | Der Durchzug durch das rote Meer                 |
+
+  | ﻿                |                                                  |
+
+  | ﻿ F. Mendelssohn | Elias, op. 70                                    |
+
+  | ﻿                | Lobgesang op. 52                                 |
+
+  | ﻿                | Paulus op. 36                                    |
+
+  | ﻿                | Psalm 42 Wie der Hirsch schreiet                 |
+
+  | ﻿                | Hymne Hör mein Bitten                            |
+
+  | ﻿                | Salve Regina                                     |
+
+  | ﻿                |                                                  |
+
+  | ﻿ W. A. MOZART   | Requiem, KV 626                                  |
+
+  | ﻿                | Missa in c-Moll, KV 427 (1. und 2. Sopran)       |
+
+  | ﻿                | Missa in C, Krönungsmesse, KV 317                |
+
+  | ﻿                | Vesperae solennes de Confessore, KV 339          |
+
+  | ﻿                | Exsultate, jubilate, KV 165 (158a)               |
+
+  | ﻿                |                                                  |
+
+  | R. Mauersberger  | Passion nach dem Lukas-Evangelium (1947) RMWV 9  |
+
+  | ﻿                |                                                  |
+
+  | ﻿ C. Orff        | Carmina Burana                                   |
+
+  | ﻿                |                                                  |
+
+  | ﻿ F. Schubert    | Messe in As Dur                                  |
+
+  | ﻿                | Messe in Es Dur                                  |
+
+  | ﻿                | Messe in F Dur                                   |
+
+  | ﻿                |                                                  |
+
+  | ﻿ J. Rutter      | Requiem                                          |
+
+  | ﻿                |                                                  |
+
+  | ﻿ G. Rheinberger | Der Stern von Bethlehem, op. 164                 |
+
+  | ﻿                |                                                  |
+
+  | ﻿ G. Rossini     | Petite Messe Solennelle                          |
+
+  | ﻿                |                                                  |
+
+  | ﻿ C. Saint-Saëns | Oratorio de Noël, op. 12                         |
+
+  | ﻿                |                                                  |
+
+  | ﻿ A. Vivaldi     | Gloria, RV 589 (1. und 2. Sopran)                |
+
+  | ﻿                | Magnificat, RV 610 (1. und 2. Sopran)            |              
+
