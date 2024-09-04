@@ -6,7 +6,7 @@ cityLangSecondary: Hamburg
 date: 2024-09-29T21:00:46+02:00
 hallLangPrimary: ST. JOHANNIS HARVESTEHUDE
 hallLangSecondary: ST. JOHANNIS HARVESTEHUDE
-programLangPrimary: F. Martin »Golgatha«
+programLangPrimary: F. Martin »Golgotha«
 programLangSecondary: F. Martin »Golgotha«
 musiciansLangPrimary: |-
   Anna Nesyba | Sopran
