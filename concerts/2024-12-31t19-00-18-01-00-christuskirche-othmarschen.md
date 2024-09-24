@@ -10,6 +10,13 @@ programLangPrimary: Silvesterkonzert Sopran & Trompete
 programLangSecondary: Silvesterkonzert Sopran & Trompete
 musiciansLangPrimary: |
   Marlen Korf | Sopran
-musiciansLangSecondary: Marlen Korf | Sopran
+  Christoph Semmler | Trompete
+
+  Rainer Lanz | Leitung
+musiciansLangSecondary: |-
+  Marlen Korf | Sopran
+  Christoph Semmler | Trompete
+
+  Rainer Lanz | Leitung
 link: https://www.nordkirche.de/veranstaltungen/veranstaltung/event/silvesterkonzert-21
 ---
